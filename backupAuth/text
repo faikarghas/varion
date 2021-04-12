@@ -1,0 +1,366 @@
+Route
+
+Route::get('/',[HomeController::class,'index']);
+
+Route::get('login',[AuthController::class,'index'])->name('login');
+Route::post('proses_login',[AuthController::class,'proses_login']);
+Route::get('logout',[AuthController::class,'logout'])->name('logout');
+
+// auth
+
+Route::group(['middleware'=>['auth']],function(){
+    Route::group(['middleware'=>['check_auth:admin']],function(){
+        Route::get('admin',[AdminController::class,'index'])->name('admin');
+    });
+    Route::group(['middleware'=>['check_auth:editor']],function(){
+        Route::get('editor',[EditorController::class,'index'])->name('editor');
+    });
+});
+
+View
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Login Form - Afrizals Blog</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body class="bg-primary">
+        <div id="layoutAuthentication">
+            <div id="layoutAuthentication_content">
+                <main>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5">
+                                <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                    {{-- Error Alert --}}
+                                    @if(session('error'))
+                                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                                        {{session('error')}}
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    @endif
+                                    <div class="card-header">
+                                        <h3 class="text-center font-weight-light my-4">Login</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <form action="{{url('proses_login')}}" method="POST" id="logForm">
+                                            {{ csrf_field() }}
+                                            <div class="form-group">
+                                                @error('login_gagal')
+                                                    {{-- <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $message }}</strong>
+                                                    </span> --}}
+                                                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                                        {{-- <span class="alert-inner--icon"><i class="ni ni-like-2"></i></span> --}}
+                                                        <span class="alert-inner--text"><strong>Warning!</strong> {{ $message }}</span>
+                                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    @enderror
+                                                <label class="small mb-1" for="inputEmailAddress">Username</label>
+                                                <input
+                                                    class="form-control py-4"
+                                                    id="inputEmailAddress"
+                                                    name="username"
+                                                    type="text"
+                                                    placeholder="Masukkan Username"/>
+                                                @if($errors->has('username'))
+                                                <span class="error">{{ $errors->first('username') }}</span>
+                                                @endif
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="small mb-1" for="inputPassword">Password</label>
+                                                <input
+                                                    class="form-control py-4"
+                                                    id="inputPassword"
+                                                    type="password"
+                                                    name="password"
+                                                    placeholder="Masukkan Password"/>
+                                                @if($errors->has('password'))
+                                                <span class="error">{{ $errors->first('password') }}</span>
+                                                @endif
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="custom-control custom-checkbox">
+                                                    <input class="custom-control-input" id="rememberPasswordCheck" type="checkbox"/>
+                                                    <label class="custom-control-label" for="rememberPasswordCheck">Remember password</label>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="form-group d-flex align-items-center justify-content-between mt-4 mb-0">
+                                                {{-- <a class="small" href="#">Forgot Password?</a> --}}
+                                                <button class="btn btn-primary btn-block" type="submit">Login</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="card-footer text-center">
+                                        <div class="small">
+                                            {{-- <a href="{{url('register')}}">Belum Punya Akun? Daftar!</a> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+ 
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script src="{{url('assets/js/scripts.js')}}"></script>
+    </body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <title>Dashboard - Afrizals Blog</title>
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link href="{{url('assets/css/styles.css')}}" rel="stylesheet"/>
+        <link
+            href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css"
+            rel="stylesheet"
+            crossorigin="anonymous"/>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+            crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Afrizals Blog</a>
+            <button
+                class="btn btn-link btn-sm order-1 order-lg-0"
+                id="sidebarToggle"
+                href="#">
+                <i class="fas fa-bars"></i>
+            </button >
+            <!-- Navbar Search-->
+            <form
+                class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Search for..."
+                        aria-label="Search"
+                        aria-describedby="basic-addon2"/>
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ml-auto ml-md-0">
+                <li class="nav-item dropdown">
+                    <a
+                        class="nav-link dropdown-toggle"
+                        id="userDropdown"
+                        href="#"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false">
+                        <i class="fas fa-user fa-fw"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <a class="dropdown-item" href="#">Activity Log</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{{url('logout')}}">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+
+                    <div class="sb-sidenav-footer">
+                        <div class="small"></div>
+                        Start Bootstrap
+                    </div>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid">
+                        <h1 class="mt-4">Dashboard</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Dashboard</li>
+                        </ol>
+                        <h1>Login Sebagai:
+                            {{ Auth::user()->email }}</h1>
+                        <div class="row">
+                            <div class="col-xl-3 col-md-6">
+
+                                <div class="card bg-primary text-white mb-4">
+                                    <div class="card-body">Primary Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">Warning Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-success text-white mb-4">
+                                    <div class="card-body">Success Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-3 col-md-6">
+                                <div class="card bg-danger text-white mb-4">
+                                    <div class="card-body">Danger Card</div>
+                                    <div class="card-footer d-flex align-items-center justify-content-between">
+                                        <a class="small text-white stretched-link" href="#">View Details</a>
+                                        <div class="small text-white">
+                                            <i class="fas fa-angle-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-area mr-1"></i>Area Chart Example</div>
+                                    <div class="card-body">
+                                        <canvas id="myAreaChart" width="100%" height="40"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        <i class="fas fa-chart-bar mr-1"></i>Bar Chart Example</div>
+                                    <div class="card-body">
+                                        <canvas id="myBarChart" width="100%" height="40"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="py-4 bg-light mt-auto">
+                    <div class="container-fluid">
+                        <div class="d-flex align-items-center justify-content-between small">
+                            <div class="text-muted">Copyright &copy; Afrizals Blog 2020</div>
+                            <div>
+                                <a href="#">Privacy Policy</a>
+                                &middot;
+                                <a href="#">Terms &amp; Conditions</a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+
+    </body>
+</html>
+
+controller auth
+
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+
+
+class AuthController extends Controller
+{
+    public function index(){
+        return view('login');
+    }
+
+    public function proses_login(Request $request){
+        $request->validate(
+            [
+                'username' => 'required',
+                'password' => 'required'
+            ]
+        );
+
+        $credential = $request->only('username','password');
+
+        if (Auth::attempt($credential)) {
+            $user = Auth::user();
+
+            if ($user->level == 'admin') {
+                return redirect()->intended('admin');
+            } elseif ($user->level == 'editor') {
+                return redirect()->intended('editor');
+            }
+
+            return redirect()->intended('/');
+        }
+
+        return redirect('/');
+
+    }
+
+    public function logout(Request $request){
+        $request->session()->flush();
+        Auth::logout();
+        return Redirect('login');
+    }
+}
