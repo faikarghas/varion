@@ -1001,3 +1001,26 @@ main .section__subsidiaries-third .banner__subsidiaries-desc p {
 .section__career-second ul:nth-child(2) {
   margin-top: 45px;
 }
+
+.section__career-third .mb-5r {
+  margin-bottom: 5rem;
+}
+.section__career-third h2 {
+  font-weight: 900;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.section__career-third .list__career h4 {
+  font-weight: 900;
+}
+.section__career-third .list__career ul {
+  padding: 0;
+  margin: 0;
+}
+.section__career-third .list__career ul li {
+  list-style: none;
+}
+.section__career-third .list__career .btn-join {
+  width: 150px;
+  border-radius: 15px;
+}

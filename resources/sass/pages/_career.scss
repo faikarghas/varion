@@ -38,7 +38,6 @@
     }
 }
 
-
 .section__career-second{
     padding: 10rem 0;
     ul{
@@ -54,4 +53,34 @@
             margin-top: 45px;
         }
     }
+}
+
+.section__career-third{
+    .mb-5r{
+        margin-bottom: 5rem;
+    }
+    h2{
+        font-weight: 900;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .list__career{
+        h4{
+            font-weight: 900;
+        }
+        ul{
+            padding: 0;
+            margin: 0;
+            li{
+                list-style: none;
+            }
+        }
+    
+        .btn-join{
+            width: 150px;
+            border-radius: 15px;
+        }
+    }
+
 }
