@@ -1,0 +1,177 @@
+header{
+    .about__header{
+        margin-top: 200px;
+        h1{
+            font-weight: 800;
+        }
+    }
+
+    .bg-headerAbout{
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-color: $color_lightGrey;
+        z-index: -1;
+    }
+
+    .bg-headerAbout2{
+        position: absolute;
+        width: 30%;
+        height: calc(100% + 290px);
+        left: 0;
+        top: -290px;
+        background-color: $color_lightGrey;
+        z-index: -1;
+    }
+
+    .aboutHeaderSlider{
+        padding: 0;
+        list-style-type: none;
+        position: relative;
+        margin: 0;
+        li{
+            position: relative;
+            height: 340px;
+            display: flex !important;
+            align-items: flex-end;
+            padding-bottom: 2rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .slider__header-desc{
+                margin-left: 47px;
+                width: 375px;
+                h1{
+                    color: white;
+                    font-size: 3em;
+                    font-weight: 900;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        .slick-dots{
+            position: absolute;
+            top: 70%;
+            bottom: unset;
+            right: -45px;
+            width: unset;
+            transform: translateY(-50%);
+            li{
+                position: relative;
+                display: block;
+                width: 20px;
+                height: 20px;
+                margin: 0 5px;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+    }
+
+}
+
+main{
+    .section__subsidiaries-first{
+        padding: 8rem 0;
+        position: relative;
+        h4{
+            font-size: 1.8rem;
+            font-weight: 900;
+            margin-bottom: 4rem;
+        }
+        h3{
+            font-size: 1.9rem;
+            font-weight: 900;
+            margin-bottom: 4rem;
+        }
+        .img__wrapper{
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 100%;
+            &-front{
+                width: 40%;
+                height: 190px;
+                position: absolute;
+                right: 106px;
+                bottom: 0;
+                z-index: 2;
+            }
+            &-back{
+                width: 70%;
+                height: 240px;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+        }
+        .bg-mainSubsiFirst{
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: $color_lightGrey;
+            z-index: -1;
+        }
+        .bg-mainSubsiFirst2{
+            position: absolute;
+            width: 30%;
+            height: 65%;
+            right: 0;
+            bottom: 0;
+            background-color: $color_lightGrey;
+            z-index: -1;
+        }
+    }
+    .section__subsidiaries-second{
+        padding: 2rem 0 0rem 0;
+        position: relative;
+        .img__wrapper{
+            height: 250px;
+            margin-bottom: 3.5rem;
+        }
+        .desc__wrapper{
+            padding: 0 4rem;
+            h3{
+                color: $color_darkGrey;
+                font-weight: 800;
+            }
+        }
+        .bg-mainSubsiSecond{
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            right: 0;
+            top: 0;
+            background-color: #F4F4F5;
+            z-index: -1;
+        }
+    }
+
+    .section__subsidiaries-third{
+        .banner__subsidiaries{
+            height: 430px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            &-desc{
+                width: 400px;
+                h2{
+                    color: white;
+                    font-weight: 900;
+                    font-size: 4rem;
+                }
+                p{
+                    color: white;
+                }
+            }
+        }
+    }
+}

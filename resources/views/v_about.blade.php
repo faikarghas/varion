@@ -6,7 +6,7 @@
         <title>Varion</title>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('/css/main.css') }}">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -36,36 +36,9 @@
                     </div>
                 </div>
             </div>
-            {{-- <div class="slider__header m-0">
+            <div class="slider__header m-0">
                 <ul class="aboutHeaderSlider">
                     <li style="background-image: url('https://source.unsplash.com/random/1255x500')"></li>
-                    <li style="background-image: url('https://source.unsplash.com/random/1255x500')"></li>
-                </ul>
-            </div> --}}
-            <div class="slider__header">
-                <ul class="aboutHeaderSlider">
-                    <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="slider__header-desc">
-                                        <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url('https://source.unsplash.com/random/1255x501')">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-4">
-                                    <div class="slider__header-desc">
-                                        <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
                 </ul>
             </div>
             <div class="bg-headerAbout"></div>
@@ -73,22 +46,14 @@
             <div class="h_aks2"></div>
         </header>
         <main>
-            <section class="section__subsidiaries-first">
+            <section class="section__about-first">
                 <div class="container">
                     <div class="row">
-                        <div class="col-12">
-                            <h4>PT VARION SUKSES MAKMUR</h4>
-                        </div>
-                        <div class="col-12 col-lg-7">
-                            <div class="img__wrapper">
-                                <div class="img__wrapper-front"><img src="https://source.unsplash.com/random/1255x500" width="100%" height="100%" alt=""></div>
-                                <div class="img__wrapper-back"><img src="https://source.unsplash.com/random/1255x501" width="100%" height="100%"     alt=""></div>
-                            </div>
-                        </div>
                         <div class="col-12 col-lg-5">
-                            <h3>FAIRLY PRICED, SUSTAINABLY PRODUCED,<br/>
-                                HIGH-QUALITY COFFEE ALL THE WAY<br/>
-                                TO A CUP ISN’T EASY.</h3>
+                            <h4>PT VARION CAPITAL MANAGEMENT</h4>
+                            <h3>OUR MISSION IS FOR THE EXISTING<br/>
+                                NATIONAL INDUSTRY TO KEEP THRIVING<br/>
+                                AS THE WHOLE WORLD EVOLVES.</h3>
                             <p>Varion Capital Management as the core of Varion & Co. is a company
                                 involved in investment and business development, headquartered in Jakarta.
                                 We aim to drive the growth of existing business with potentials and promote
@@ -99,14 +64,21 @@
                                 creatively work and develop our own business and become project leader in
                                 the future and expanding Varion & Co. group.</p>
                         </div>
+                        <div class="col-12 col-lg-7">
+                            <div class="img__wrapper">
+                                <div class="img__wrapper-front"><img src="https://source.unsplash.com/random/1255x500" width="100%" height="100%" alt=""></div>
+                                <div class="img__wrapper-back"><img src="https://source.unsplash.com/random/1255x501" width="100%" height="100%"     alt=""></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="bg-mainSubsiFirst"></div>
-                <div class="bg-mainSubsiFirst2"></div>
+                <div class="bg-mainAboutFirst"></div>
+                <div class="bg-mainAboutFirst2"></div>
             </section>
-            <section class="section__subsidiaries-second">
+            <section class="section__about-second">
                 <div class="container">
                     <div class="row">
+                        <div class="col-12"><div class="hr"></div></div>
                         <div class="col-12 col-lg-4 mb-5">
                             <div class="img__wrapper">
                                 <img src="https://source.unsplash.com/random/1255x701" width="100%" height="100%" alt="">
@@ -134,29 +106,28 @@
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
+                        <div class="col-12"><div class="hr mb-0"></div></div>
                     </div>
                 </div>
-                <div class="bg-mainSubsiSecond"></div>
+                <div class="bg-mainAboutSecond"></div>
             </section>
-            <section class="section__subsidiaries-third">
-                <div class="banner__subsidiaries" style="background-image: url('https://source.unsplash.com/random/1255x1200')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="banner__subsidiaries-desc">
-                                    <h2 class="mb-4">WILL BE ON THEM<br/> MARKET IN 2022</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                        magna aliquam erat volutpat. Ut wisi enim ad minim
-                                        veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        loborti.</p>
-                                </div>
+            <section class="section__about-third">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="partner__wrapper">
+                                <h3>OUR PARTNERS</h3>
+                                <ul>
+                                    <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
+                                    <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
+                                    <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="section__subsidiaries-contact">
+            <section class="section__about-contact">
                 <div class="contact__wrapper">
                     <div class="container">
                         <div class="row">
@@ -212,4 +183,3 @@
         <script src="{{ asset('/js/app.js') }}"></script>
     </body>
 </html>
-

@@ -92,17 +92,44 @@
 
 // button learn
 
-.learn__button{
+.learn__button,.learn__button-dark{
     width: 200px;
     a{
-        background-color: white;
         text-transform: uppercase;
-        color: black;
-        width: 150px;
-        height: 25px;
+        height: 35px;
         display: flex;
         align-items: center;
         justify-content: center;
         text-decoration: none;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        font-weight: 800;
+        &:hover{
+            color: black;
+        }
     }
+}
+
+.learn__button{
+    background-color: white;
+    a{
+        color: black;
+    }
+}
+
+.learn__button-dark{
+    background-color: #819691;
+    a{
+        color: white;
+    }
+}
+
+.h_aks1{
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 30px;
+    background-color: black;
 }

@@ -1,0 +1,36 @@
+footer{
+    background-color: black;
+    padding: 2rem 0;
+    ul{
+        padding: 0;
+        li{
+            list-style: none;
+            display: inline-block;
+            position: relative;
+            &:not(:last-child){
+                padding-right: 1.5rem;
+                &:after{
+                    content: "|";
+                    color: $color_darkGrey;
+                    position: absolute;
+                    right: -3px;
+                    font-size: 1.3rem;
+                }
+            }
+            &:not(:first-child){
+                padding-left: 1.5rem;
+            }
+        }
+    }
+    a,p{
+        color: $color_darkGrey;
+        font-size: 1.2rem;
+        margin: 0;
+    }
+    a{
+        text-decoration: none;
+        &:hover{
+            color: $color_darkGrey;
+        }
+    }
+}

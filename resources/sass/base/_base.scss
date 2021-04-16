@@ -64,8 +64,13 @@ hr{
 }
 
 main:not([page="home"]){
-    margin-top: 136px ;
+    // margin-top: 136px ;
     @include respond(down-tab-port){
         margin-top: unset;
     }
+}
+
+p{
+    font-size: 1.4rem;
+    color: $color_darkGrey;
 }

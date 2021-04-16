@@ -1,0 +1,57 @@
+.section__career-first{
+    margin-top: 200px;
+    position: relative;
+    h1{
+        font-weight: 900;
+        font-size: 4rem;
+    }
+    p{
+        color: black;
+    }
+    a{
+        color: black;
+        font-size: 1.3rem;
+        font-weight: 700;
+        text-decoration: none;
+        ul{
+            display: inline-flex;
+            padding: 0;
+            align-items: center;
+            border-bottom: 4px solid rgb(89, 168, 241);
+            padding-bottom: 4px;
+            li{
+                display: inline-block;
+                &:nth-child(2){
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+    .bg-mainCareerFirst{
+        position: absolute;
+        width: 30%;
+        height: calc(100% + 290px);
+        left: 0;
+        top: -290px;
+        background-color: $color_lightGrey;
+        z-index: -1;
+    }
+}
+
+
+.section__career-second{
+    padding: 10rem 0;
+    ul{
+        position: relative;
+        padding: 0;
+        height: 250px;
+        margin: 0;
+        li{
+            display: inline-block;
+            position: absolute;
+        }
+        &:nth-child(2){
+            margin-top: 45px;
+        }
+    }
+}
