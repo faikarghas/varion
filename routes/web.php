@@ -21,7 +21,7 @@ use App\Http\Controllers\CareerController;
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('about',[AboutController::class,'index'])->name('about');
 Route::get('subsidiaries/{slug}',[SubsidiariesController::class,'index']);
-Route::get('career',[CareerController::class,'index']);
+Route::get('career',[CareerController::class,'index'])->name('career');
 
 
 

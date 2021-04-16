@@ -22,9 +22,9 @@
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="{{route('about')}}">ABOUT US</a></li>
-                        <li><a href="">SUBSIDIARIES</a></li>
+                        <li><a href="subsidiaries/test">SUBSIDIARIES</a></li>
                         <li><a href="">CONTACT</a></li>
-                        <li><a href="">CAREER</a></li>
+                        <li><a href="{{route('career')}}">CAREER</a></li>
                     </ul>
                 </div>
                 <div class="menu__home-navbar"></div>
