@@ -56,6 +56,7 @@
 }
 
 .section__career-third{
+    padding: 10rem 0;
     .mb-5r{
         margin-bottom: 5rem;
     }
@@ -66,17 +67,28 @@
     }
 
     .list__career{
+        &:not(:last-child){
+            border-bottom: 2px solid black;
+        }
+        padding: 2rem 0;
+        padding-left: 5rem;
         h4{
             font-weight: 900;
+        }
+        p{
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: black;
         }
         ul{
             padding: 0;
             margin: 0;
             li{
+                font-size: 1.4rem;
                 list-style: none;
+                font-weight: 700;
             }
         }
-    
         .btn-join{
             width: 150px;
             border-radius: 15px;

@@ -95,6 +95,86 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-12 list__career">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>MARKETING MANAGER</h4>
+                                    <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
+                                        DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
+                                        MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
+                                        QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
+                                </div>
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <ul>
+                                        <li>Status  : Full Time</li>
+                                        <li>Location  : Jakarta</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-inline-flex justify-content-center align-items-end flex-column">
+                                    <a class="btn-danger btn btn-join">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 list__career">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>MARKETING MANAGER</h4>
+                                    <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
+                                        DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
+                                        MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
+                                        QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
+                                </div>
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <ul>
+                                        <li>Status  : Full Time</li>
+                                        <li>Location  : Jakarta</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-inline-flex justify-content-center align-items-end flex-column">
+                                    <a class="btn-danger btn btn-join">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 list__career">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>MARKETING MANAGER</h4>
+                                    <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
+                                        DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
+                                        MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
+                                        QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
+                                </div>
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <ul>
+                                        <li>Status  : Full Time</li>
+                                        <li>Location  : Jakarta</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-inline-flex justify-content-center align-items-end flex-column">
+                                    <a class="btn-danger btn btn-join">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 list__career">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4>MARKETING MANAGER</h4>
+                                    <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
+                                        DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
+                                        MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
+                                        QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
+                                </div>
+                                <div class="col-3 d-flex align-items-center justify-content-center">
+                                    <ul>
+                                        <li>Status  : Full Time</li>
+                                        <li>Location  : Jakarta</li>
+                                    </ul>
+                                </div>
+                                <div class="col-3 d-inline-flex justify-content-center align-items-end flex-column">
+                                    <a class="btn-danger btn btn-join">Join Now</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
