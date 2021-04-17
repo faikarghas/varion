@@ -1892,6 +1892,23 @@ $('.slider-nav').slick({
   arrows: false,
   focusOnSelect: true
 });
+var valLeft = 0;
+var valLeft2 = 40;
+var valTop = 0;
+
+for (var i = 1; i <= 5; i++) {
+  valLeft += 300;
+  valLeft2 += 10;
+  valTop += 45;
+
+  if (i === 1) {
+    $(".section__career-second ul .item-".concat(i)).css('left', "-50px");
+    $(".section__career-second ul .item-".concat(i)).css('top', "0");
+  } else {
+    $(".section__career-second ul .item-".concat(i)).css('left', "".concat(valLeft - 300 - valLeft2, "px"));
+    $(".section__career-second ul .item-".concat(i)).css('top', "-".concat(valTop - 45, "px"));
+  }
+}
 
 /***/ }),
 

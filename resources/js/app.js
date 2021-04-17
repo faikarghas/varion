@@ -57,3 +57,19 @@ $('.slider-nav').slick({
     arrows:false,
     focusOnSelect: true,
 });
+
+let valLeft = 0
+let valLeft2 = 40
+let valTop = 0
+for (let i = 1; i <= 5; i++) {
+    valLeft += 300
+    valLeft2 += 10
+    valTop += 45
+    if (i === 1) {
+        $(`.section__career-second ul .item-${i}`).css('left',`-50px`)
+        $(`.section__career-second ul .item-${i}`).css('top',`0`)
+    } else {
+        $(`.section__career-second ul .item-${i}`).css('left',`${(valLeft-300)-valLeft2}px`)
+        $(`.section__career-second ul .item-${i}`).css('top',`-${valTop-45}px`)
+    }
+}
