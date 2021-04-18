@@ -8,12 +8,12 @@
                 <li><a href="">HOME</a></li>
                 <li><a href="{{route('about')}}">ABOUT US</a></li>
                 <li class="dropdown_link">
-                    <a href="subsidiaries/test">SUBSIDIARIES</a>
+                    <a href="">SUBSIDIARIES</a>
                     <ul class="sub__menu">
-                        <li><a href="">PT VARION SUKSES MAKMUR</a></li>
-                        <li><a href="">FUME KOPI INDONESIA</a></li>
-                        <li><a href="">PT VARION AGRITECH INDONESIA</a></li>
-                        <li><a href="">PT VARION AGRO SENTOSA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
+                        <li><a href="{{url('subsidiaries/fume-kopi-indonesia')}}">FUME KOPI INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agritech-indonesia')}}">PT VARION AGRITECH INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agro-sentosa')}}">PT VARION AGRO SENTOSA</a></li>
                     </ul>
                 </li>
                 <li><a href="">CONTACT</a></li>
