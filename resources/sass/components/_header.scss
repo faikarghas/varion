@@ -2,6 +2,41 @@ header{
     .slider__header{
         position: relative;
         width: 93%;
-        margin-top: 90px;
+        margin-top: 110px;
+    }
+
+    .menu__home{
+        &-link{
+        position: relative;
+            .dropdown_link{
+                .sub__menu{
+                    display: none;
+                    position: absolute;
+                    padding: 2rem 0px;
+                    top: 100%;
+                    right: 0;
+                    width: -webkit-max-content;
+                    width: -moz-max-content;
+                    width: max-content;
+                    li{
+                        display: inline-block;
+                        margin-right: 25px;
+                        margin-left: 0;
+                        padding-right: 0;
+                        &:hover{
+                            border-bottom: 1px solid black;
+                        }
+                        a{
+                            font-size: 9px;
+                        }
+                    }
+                }
+                &:hover{
+                    .sub__menu{
+                        display: block;
+                    }
+                }
+            }
+        }
     }
 }
