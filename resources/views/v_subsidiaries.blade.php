@@ -137,35 +137,7 @@
                 </div>
             </section>
             <section class="section__subsidiaries-contact">
-                <div class="contact__wrapper">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <h3>CONTACT US</h3>
-                            </div>
-                            <div class="col-4">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore autem fugit veritatis dolorem deleniti expedita inventore itaque dignissimos, deserunt consectetur quia commodi! Nisi similique consequuntur, veniam earum veritatis eius.</p>
-                            </div>
-                            <div class="col-8">
-                                <div class="d-flex">
-                                    <ul class="contact__wrapper-info">
-                                        <li><p>WISMA46 BUILDING, 45TH FLOOR JALAN JENDERAL SUDIRMAN, KAV-1, JAKARTA, 10220</p></li>
-                                        <li><p>PHONE (+62) 6578.95000</p></li>
-                                        <li><p>FAX (+62) 6578.95000</p></li>
-                                    </ul>
-                                    <form class="contact__wrapper-form" action="">
-                                        <input class="form-control" type="text" placeholder="YOUR NAME" aria-label="default input example">
-                                        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
-                                        <input class="form-control" type="text" placeholder="EMAIL" aria-label="default input example">
-                                        <input class="form-control" type="number" placeholder="PHONE NUMER" aria-label="default input example">
-                                        <button type="button" class="btn btn-primary">SEND</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="bg-contact"></div>
-                </div>
+                @include('components/presentational/contact')
             </section>
         </main>
 @endsection
