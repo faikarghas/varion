@@ -74,4 +74,7 @@ main:not([page="home"]){
 p{
     font-size: 1.4rem;
     color: $color_darkGrey;
+    @include respond(down-tab-port){
+        font-size: 1.2rem;
+    }
 }

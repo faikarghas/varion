@@ -1,6 +1,9 @@
 footer{
     background-color: black;
     padding: 2rem 0;
+    .logo_footer{
+        object-fit: contain;
+    }
     ul{
         padding: 0;
         li{

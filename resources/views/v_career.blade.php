@@ -3,13 +3,21 @@
 <div class="h_aks1"></div>
 <header class="position-relative">
     <menu class="menu__home">
-        <div class="menu__home-logo"><img src="{{asset('/images/varion.png')}}" alt="" srcset="" width="222px" height="40px"></div>
+        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset="" width="222px" height="40px"></div>
         <div class="menu__home-link">
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="{{route('about')}}">ABOUT US</a></li>
-                <li><a href="subsidiaries/test">SUBSIDIARIES</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li class="dropdown_link">
+                    <a href="">SUBSIDIARIES</a>
+                    <ul class="sub__menu">
+                        <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
+                        <li><a href="{{url('subsidiaries/fume-kopi-indonesia')}}">FUME KOPI INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agritech-indonesia')}}">PT VARION AGRITECH INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agro-sentosa')}}">PT VARION AGRO SENTOSA</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{route('contact')}}">CONTACT</a></li>
                 <li><a href="{{route('career')}}">CAREER</a></li>
             </ul>
         </div>
@@ -37,7 +45,7 @@
         </div>
         <div class="bg-mainCareerFirst"></div>
     </section>
-    <section class="section__career-second">
+    {{-- <section class="section__career-second">
         <ul class="p-0">
             <li class="item-1"><img src="https://source.unsplash.com/random/250x250" width="250px" height="250px" alt=""></li>
             <li class="item-2"><img src="https://source.unsplash.com/random/250x251" width="250px" height="250px" alt=""></li>
@@ -54,6 +62,9 @@
         </ul>
         <div class="bg-mainSubsiFirst"></div>
         <div class="bg-mainSubsiSecond"></div>
+    </section> --}}
+    <section class="section__career-second">
+        <img src="{{asset('images/carrer.jpg')}}" width="100%" alt="">
     </section>
     <section class="section__career-third">
         <div class="container">

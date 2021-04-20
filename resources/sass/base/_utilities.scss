@@ -1,7 +1,7 @@
 .forDesktop{
-    display: block;
+    display: block !important;
     @include respond(down-tab-port){
-        display: none;
+        display: none !important;
     }
 }
 
@@ -13,9 +13,9 @@
 }
 
 .forMobile{
-    display: none;
+    display: none !important;
     @include respond(down-tab-port){
-        display: block;
+        display: block !important;
     }
 }
 
@@ -46,7 +46,6 @@
     transition: .25s ease-in-out;
 }
 
-
 #menu-hamburger span:nth-child(1) {
     top: 10px;
 }
@@ -54,6 +53,7 @@
 #menu-hamburger span:nth-child(2),#menu-hamburger span:nth-child(3) {
     top: 18px;
 }
+
 #menu-hamburger span:nth-child(3) {
     display: none;
 }
@@ -61,7 +61,6 @@
 #menu-hamburger span:nth-child(4){
     top: 26px;
 }
-
 
 #menu-hamburger.open span:nth-child(1) {
     top: 18px;
@@ -89,11 +88,13 @@
     display: none;
 }
 
-
 // button learn
 
 .learn__button,.learn__button-dark{
     width: 200px;
+    @include respond(down-tab-port){
+        width: unset;
+    }
     a{
         text-transform: uppercase;
         height: 35px;
@@ -133,3 +134,4 @@
     height: 30px;
     background-color: black;
 }
+

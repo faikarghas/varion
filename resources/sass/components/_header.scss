@@ -3,6 +3,9 @@ header{
         position: relative;
         width: 93%;
         margin-top: 110px;
+        @include respond(down-tab-port){
+            width: 100%;
+        }
     }
 
     .menu__home{

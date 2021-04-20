@@ -1842,18 +1842,29 @@ module.exports = {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+var url = window.location.pathname;
 $(window).on('scroll', function () {
   var scrollPos = $(this).scrollTop();
 
   if (scrollPos > 1) {
     $('.menu__home').css('background-color', 'white');
+  } else if (scrollPos === 0 && url === '/contact') {
+    $('.menu__home').css('background-color', '#F4F4F5');
   } else {
     $('.menu__home').css('background-color', 'transparent');
   }
 });
 $('.homeHeaderSlider').slick({
   arrows: false,
-  dots: true
+  dots: true // responsive: [
+  //     {
+  //       breakpoint: 600,
+  //       settings: {
+  //         dots:false
+  //       }
+  //     }
+  // ]
+
 });
 $('.aboutHeaderSlider').slick({
   arrows: false,
@@ -1863,9 +1874,16 @@ $('.homeSectionSlider').slick({
   arrows: true,
   dots: false,
   slidesToShow: 3,
-  slidesToScroll: 3 // prevArrow: $('.prev'),
-  // nextArrow: $('.next')
-
+  slidesToScroll: 3,
+  responsive: [{
+    breakpoint: 600,
+    settings: {
+      centerMode: true,
+      adaptiveHeight: true,
+      slidesToShow: 1,
+      slidesToScroll: 1
+    }
+  }]
 });
 $('.slider-for').slick({
   slidesToShow: 1,

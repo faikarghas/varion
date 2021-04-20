@@ -3,13 +3,21 @@
 <div class="h_aks1"></div>
 <header class="position-relative">
     <menu class="menu__home">
-        <div class="menu__home-logo"><img src="{{asset('/images/varion.png')}}" alt="" srcset="" width="222px" height="40px"></div>
+        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset="" width="222px" height="40px"></div>
         <div class="menu__home-link">
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="{{route('about')}}">ABOUT US</a></li>
-                <li><a href="{{url('subsidiaries/test')}}">SUBSIDIARIES</a></li>
-                <li><a href="">CONTACT</a></li>
+                <li class="dropdown_link">
+                    <a href="">SUBSIDIARIES</a>
+                    <ul class="sub__menu">
+                        <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
+                        <li><a href="{{url('subsidiaries/fume-kopi-indonesia')}}">FUME KOPI INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agritech-indonesia')}}">PT VARION AGRITECH INDONESIA</a></li>
+                        <li><a href="{{url('subsidiaries/pt-varion-agro-sentosa')}}">PT VARION AGRO SENTOSA</a></li>
+                    </ul>
+                </li>
+                <li><a href="{{route('contact')}}">CONTACT</a></li>
                 <li><a href="{{route('career')}}">CAREER</a></li>
             </ul>
         </div>

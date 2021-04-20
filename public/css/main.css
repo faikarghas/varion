@@ -89,13 +89,18 @@ p {
   font-size: 1.4rem;
   color: #808080;
 }
+@media only screen and (max-width: 62em) {
+  p {
+    font-size: 1.2rem;
+  }
+}
 
 .forDesktop {
-  display: block;
+  display: block !important;
 }
 @media only screen and (max-width: 62em) {
   .forDesktop {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -111,11 +116,11 @@ p {
 }
 
 .forMobile {
-  display: none;
+  display: none !important;
 }
 @media only screen and (max-width: 62em) {
   .forMobile {
-    display: block;
+    display: block !important;
   }
 }
 
@@ -183,6 +188,11 @@ p {
 
 .learn__button, .learn__button-dark {
   width: 200px;
+}
+@media only screen and (max-width: 62em) {
+  .learn__button, .learn__button-dark {
+    width: unset;
+  }
 }
 .learn__button a, .learn__button-dark a {
   text-transform: uppercase;
@@ -278,6 +288,11 @@ header .slider__header {
   width: 93%;
   margin-top: 110px;
 }
+@media only screen and (max-width: 62em) {
+  header .slider__header {
+    width: 100%;
+  }
+}
 header .menu__home-link {
   position: relative;
 }
@@ -325,6 +340,8 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
 }
 .menu__home-logo img {
   padding-left: 5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .menu__home-link {
   display: -webkit-box;
@@ -369,6 +386,11 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   padding: 15rem 0;
   position: relative;
 }
+@media only screen and (max-width: 62em) {
+  .contact__wrapper {
+    padding: 3rem 4rem;
+  }
+}
 .contact__wrapper .bg-contact {
   position: absolute;
   right: 0;
@@ -383,20 +405,42 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   font-weight: 900;
   margin-bottom: 2rem;
 }
-.contact__wrapper-info {
+.contact__wrapper .contact__wrapper-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contact__wrapper .contact__wrapper-r-info {
+  position: relative;
   width: 50%;
   padding: 0 70px;
 }
-.contact__wrapper-info li {
+.contact__wrapper .contact__wrapper-r-info .loc_img {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+@media only screen and (max-width: 62em) {
+  .contact__wrapper .contact__wrapper-r-info {
+    padding: 0;
+    width: 100%;
+  }
+}
+.contact__wrapper .contact__wrapper-r-info li {
   list-style: none;
 }
-.contact__wrapper-info li p {
+.contact__wrapper .contact__wrapper-r-info li p {
   font-size: 1.4rem;
 }
-.contact__wrapper-form {
+.contact__wrapper .contact__wrapper-r-form {
   width: 50%;
 }
-.contact__wrapper-form input {
+@media only screen and (max-width: 62em) {
+  .contact__wrapper .contact__wrapper-r-form {
+    width: 100%;
+  }
+}
+.contact__wrapper .contact__wrapper-r-form input {
   border-radius: 10px;
   height: 30px;
   margin-bottom: 5px;
@@ -405,19 +449,19 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   padding-left: 2rem;
   border: none;
 }
-.contact__wrapper-form input::-moz-placeholder {
+.contact__wrapper .contact__wrapper-r-form input::-moz-placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form input:-ms-input-placeholder {
+.contact__wrapper .contact__wrapper-r-form input:-ms-input-placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form input::placeholder {
+.contact__wrapper .contact__wrapper-r-form input::placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form select {
+.contact__wrapper .contact__wrapper-r-form select {
   border-radius: 10px;
   height: 30px;
   margin-bottom: 5px;
@@ -426,19 +470,19 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   padding-left: 2rem;
   border: none;
 }
-.contact__wrapper-form select::-moz-placeholder {
+.contact__wrapper .contact__wrapper-r-form select::-moz-placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form select:-ms-input-placeholder {
+.contact__wrapper .contact__wrapper-r-form select:-ms-input-placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form select::placeholder {
+.contact__wrapper .contact__wrapper-r-form select::placeholder {
   color: black;
   font-weight: 800;
 }
-.contact__wrapper-form button {
+.contact__wrapper .contact__wrapper-r-form button {
   width: 100%;
   height: 30px;
   border-radius: 10px;
@@ -449,13 +493,17 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   font-size: 1.2rem;
   letter-spacing: 2px;
 }
-.contact__wrapper-form button:hover {
+.contact__wrapper .contact__wrapper-r-form button:hover {
   background-color: #819691;
 }
 
 footer {
   background-color: black;
   padding: 2rem 0;
+}
+footer .logo_footer {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 footer ul {
   padding: 0;
@@ -504,6 +552,11 @@ header .homeHeaderSlider {
   list-style-type: none;
   position: relative;
 }
+@media only screen and (max-width: 62em) {
+  header .homeHeaderSlider {
+    margin-bottom: 0;
+  }
+}
 header .homeHeaderSlider li {
   position: relative;
   height: 500px;
@@ -511,6 +564,11 @@ header .homeHeaderSlider li {
   display: -ms-flexbox !important;
   display: flex !important;
   align-items: center;
+}
+@media only screen and (max-width: 62em) {
+  header .homeHeaderSlider li {
+    height: 300px;
+  }
 }
 header .homeHeaderSlider li .slider__header-desc {
   margin-left: 47px;
@@ -535,6 +593,11 @@ header .homeHeaderSlider .slick-dots {
   right: -45px;
   width: unset;
   transform: translateY(-50%);
+}
+@media only screen and (max-width: 62em) {
+  header .homeHeaderSlider .slick-dots {
+    display: none !important;
+  }
 }
 header .homeHeaderSlider .slick-dots li {
   position: relative;
@@ -566,10 +629,20 @@ main .sectionHome__subsidiaries h3 {
   margin-bottom: 4rem;
   color: #C3C3C3;
 }
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries h3 {
+    font-size: 1.3rem;
+  }
+}
 main .sectionHome__subsidiaries h4 {
   font-size: 1.8rem;
   font-weight: 900;
   margin-bottom: 4rem;
+}
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries h4 {
+    font-size: 1rem;
+  }
 }
 main .sectionHome__subsidiaries h2 {
   font-size: 3rem;
@@ -602,6 +675,12 @@ main .sectionHome__subsidiaries ul {
   height: 360px;
   transform: translateX(40px);
   padding: 0;
+  margin: 0;
+}
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries ul {
+    transform: unset;
+  }
 }
 main .sectionHome__subsidiaries ul li {
   position: relative;
@@ -617,6 +696,11 @@ main .sectionHome__subsidiaries .paging__info {
   top: 0;
   display: grid;
 }
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries .paging__info {
+    transform: unset;
+  }
+}
 main .sectionHome__subsidiaries .paging__info p {
   font-size: 2rem;
   font-weight: 700;
@@ -624,6 +708,11 @@ main .sectionHome__subsidiaries .paging__info p {
   text-align: center;
   margin: 0;
   color: black;
+}
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries-right {
+    padding: 0rem;
+  }
 }
 main .sectionHome__subsidiaries-right .box_number {
   position: absolute;
@@ -644,6 +733,11 @@ main .sectionHome__subsidiaries-right .box_number p {
   font-weight: 800;
   color: black;
 }
+@media only screen and (max-width: 62em) {
+  main .sectionHome__subsidiaries-left {
+    padding-left: 4rem;
+  }
+}
 main .sectionHome__slider {
   height: 300px;
 }
@@ -654,6 +748,9 @@ main .sectionHome__slider ul {
 main .sectionHome__slider ul .slick-list {
   height: 100%;
 }
+main .sectionHome__slider ul .slick-track {
+  height: 100%;
+}
 main .sectionHome__slider ul .slick-next, main .sectionHome__slider ul .slick-prev {
   top: 51%;
 }
@@ -661,13 +758,28 @@ main .sectionHome__slider ul .slick-next {
   right: 2%;
   z-index: 10;
 }
+@media only screen and (max-width: 62em) {
+  main .sectionHome__slider ul .slick-next {
+    right: 5%;
+  }
+}
 main .sectionHome__slider ul .slick-prev {
   left: 2%;
   z-index: 10;
 }
+@media only screen and (max-width: 62em) {
+  main .sectionHome__slider ul .slick-prev {
+    left: 5%;
+  }
+}
 main .sectionHome__slider ul .slick-next:before, main .sectionHome__slider ul .slick-prev:before {
   font-size: 34px;
   color: black;
+}
+@media only screen and (max-width: 62em) {
+  main .sectionHome__slider ul .slick-next:before, main .sectionHome__slider ul .slick-prev:before {
+    font-size: 24px;
+  }
 }
 main .sectionHome__slider ul li {
   height: 100%;
@@ -1035,9 +1147,6 @@ main .section__subsidiaries-third .banner__subsidiaries-desc p {
   z-index: -1;
 }
 
-.section__career-second {
-  padding: 10rem 0;
-}
 .section__career-second ul {
   position: relative;
   padding: 0;
@@ -1090,4 +1199,103 @@ main .section__subsidiaries-third .banner__subsidiaries-desc p {
 .section__career-third .list__career .btn-join {
   width: 150px;
   border-radius: 15px;
+}
+
+.section__contact-first {
+  background-color: #F4F4F5;
+  margin-top: 110px;
+  padding: 8rem 20rem;
+}
+.section__contact-first h3 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.section__contact-first-l {
+  padding-right: 18rem !important;
+}
+.section__contact-first-l ul {
+  padding: 0;
+  position: relative;
+}
+.section__contact-first-l ul li {
+  list-style: none;
+}
+.section__contact-first-l ul .loc_img {
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+.section__contact-first-l .mail-logo {
+  margin-top: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.section__contact-first-r {
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.section__contact-first-r p {
+  color: black;
+}
+.section__contact-first-r form {
+  margin-top: 4rem;
+}
+.section__contact-first-r form input {
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 800;
+  padding-left: 2rem;
+  border: none;
+}
+.section__contact-first-r form input::-moz-placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form input:-ms-input-placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form input::placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form select {
+  border-radius: 10px;
+  height: 30px;
+  margin-bottom: 5px;
+  color: black;
+  font-weight: 800;
+  padding-left: 2rem;
+  border: none;
+}
+.section__contact-first-r form select::-moz-placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form select:-ms-input-placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form select::placeholder {
+  color: black;
+  font-weight: 800;
+}
+.section__contact-first-r form button {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #819691;
+  box-shadow: none;
+  border: none;
+  font-weight: 800;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.section__contact-first-r form button:hover {
+  background-color: #819691;
 }

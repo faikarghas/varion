@@ -1,7 +1,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-12 mb-5"><img src="{{asset('/images/varion.png')}}" alt="" srcset="" width="222px" height="40px"></div>
+            <div class="col-12 mb-5"><img class="logo_footer" src="{{asset('/images/logo_white.png')}}" alt="" srcset="" height="40px"></div>
             <div class="col-12 col-lg-6">
                 <ul>
                     <li><a href="">SITEMAP</a></li>

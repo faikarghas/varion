@@ -4,17 +4,18 @@
             <div class="col-12">
                 <h3>CONTACT US</h3>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-lg-4">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore autem fugit veritatis dolorem deleniti expedita inventore itaque dignissimos, deserunt consectetur quia commodi! Nisi similique consequuntur, veniam earum veritatis eius.</p>
             </div>
-            <div class="col-8">
-                <div class="d-flex">
-                    <ul class="contact__wrapper-info">
+            <div class="col-12 col-lg-8">
+                <div class="contact__wrapper-r">
+                    <ul class="contact__wrapper-r-info forDesktop">
                         <li><p>WISMA46 BUILDING, 45TH FLOOR JALAN JENDERAL SUDIRMAN, KAV-1, JAKARTA, 10220</p></li>
                         <li><p>PHONE (+62) 6578.95000</p></li>
                         <li><p>FAX (+62) 6578.95000</p></li>
+                        <img class="loc_img" src="{{asset('images/office.svg')}}" width="25px" height="25px" alt="">
                     </ul>
-                    <form class="contact__wrapper-form" action="">
+                    <form class="contact__wrapper-r-form" action="">
                         <input class="form-control" type="text" placeholder="YOUR NAME" aria-label="default input example">
                         <select class="form-select form-select-sm" aria-label=".form-select-sm example">
                             <option selected>COUNTRY</option>

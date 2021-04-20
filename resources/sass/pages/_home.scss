@@ -12,11 +12,17 @@ header{
         padding: 0;
         list-style-type: none;
         position: relative;
+        @include respond(down-tab-port){
+            margin-bottom: 0;
+        }
         li{
             position: relative;
             height: 500px;
             display: flex !important;
             align-items: center;
+            @include respond(down-tab-port){
+                height: 300px;
+            }
             .slider__header-desc{
                 margin-left: 47px;
                 width: 375px;
@@ -40,6 +46,9 @@ header{
             right: -45px;
             width: unset;
             transform: translateY(-50%);
+            @include respond(down-tab-port){
+                display: none !important;
+            }
             li{
                 position: relative;
                 display: block;
@@ -72,11 +81,17 @@ main{
             font-weight: 900;
             margin-bottom: 4rem;
             color: $color_mediumGrey;
+            @include respond(down-tab-port){
+                font-size: 1.3rem;
+            }
         }
         h4{
             font-size: 1.8rem;
             font-weight: 900;
             margin-bottom: 4rem;
+            @include respond(down-tab-port){
+                font-size: 1rem;
+            }
         }
         h2{
             font-size: 3rem;
@@ -109,6 +124,10 @@ main{
             height: 360px;
             transform: translateX(40px);
             padding: 0;
+            margin: 0;
+            @include respond(down-tab-port){
+                transform: unset;
+            }
             li{
                 position: relative;
                 img{
@@ -122,6 +141,9 @@ main{
             left: 0;
             top: 0;
             display: grid;
+            @include respond(down-tab-port){
+                transform: unset;
+            }
             p{
                 font-size: 2rem;
                 font-weight: 700;
@@ -132,6 +154,9 @@ main{
             }
         }
         &-right{
+            @include respond(down-tab-port){
+                padding: 0rem;
+            }
             .box_number{
                 position: absolute;
                 width: 80px;
@@ -150,6 +175,11 @@ main{
                 }
             }
         }
+        &-left{
+            @include respond(down-tab-port){
+                padding-left: 4rem;
+            }
+        }
     }
 
     .sectionHome__slider{
@@ -157,21 +187,35 @@ main{
         ul{
             height: 100%;
             padding: 0;
-            .slick-list {height: 100%;}
+            .slick-list {
+                height: 100%;
+            }
+            .slick-track{
+                height: 100%;
+            }
             .slick-next,.slick-prev {
                 top: 51%;
             }
             .slick-next {
                 right: 2%;
                 z-index: 10;
+                @include respond(down-tab-port){
+                    right: 5%;
+                }
             }
             .slick-prev {
                 left: 2%;
                 z-index: 10;
+                @include respond(down-tab-port){
+                    left: 5%;
+                }
             }
             .slick-next:before, .slick-prev:before {
                 font-size: 34px;
                 color: rgb(0, 0, 0);
+                @include respond(down-tab-port){
+                    font-size: 24px;
+                }
             }
             li{
                 height: 100%;

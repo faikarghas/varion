@@ -1,9 +1,13 @@
 require('./bootstrap');
 
+let url = window.location.pathname
+
 $(window).on('scroll', function() {
     var scrollPos = $(this).scrollTop();
     if (scrollPos > 1) {
         $('.menu__home').css('background-color','white')
+    } else if(scrollPos === 0 && url === '/contact'){
+        $('.menu__home').css('background-color','#F4F4F5')
     } else {
         $('.menu__home').css('background-color','transparent')
     }
@@ -11,7 +15,15 @@ $(window).on('scroll', function() {
 
 $('.homeHeaderSlider').slick({
     arrows:false,
-    dots:true
+    dots:true,
+    // responsive: [
+    //     {
+    //       breakpoint: 600,
+    //       settings: {
+    //         dots:false
+    //       }
+    //     }
+    // ]
 });
 
 $('.aboutHeaderSlider').slick({
@@ -24,8 +36,17 @@ $('.homeSectionSlider').slick({
     dots:false,
     slidesToShow: 3,
     slidesToScroll: 3,
-    // prevArrow: $('.prev'),
-    // nextArrow: $('.next')
+    responsive: [
+        {
+          breakpoint: 600,
+          settings: {
+            centerMode: true,
+            adaptiveHeight: true,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+    ]
 })
 
 $('.slider-for').slick({

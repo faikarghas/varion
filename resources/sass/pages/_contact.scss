@@ -1,50 +1,39 @@
-.contact__wrapper{
-    padding: 15rem 0;
-    position: relative;
-    @include respond(down-tab-port){
-        padding: 3rem 4rem;
-    }
-    .bg-contact{
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 70%;
-        height: 100%;
-        background-color: rgb(243, 243, 243);
-        z-index: -1;
-    }
+.section__contact-first{
+    background-color: $color_lightGrey;
+    margin-top: 110px;
+    padding: 8rem 20rem;
     h3{
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 900;
-        margin-bottom: 2rem;
     }
-    .contact__wrapper-r{
-        display: flex;
-        &-info{
+    &-l{
+        padding-right: 18rem !important;
+        ul{
+            padding: 0;
             position: relative;
-            width: 50%;
-            padding: 0 70px;
+            li{
+                list-style: none;
+            }
             .loc_img{
                 position: absolute;
                 top: 0;
-                left: 30px;
-            }
-            @include respond(down-tab-port){
-                padding: 0;
-                width: 100%;
-            }
-            li{
-                list-style: none;
-                p{
-                    font-size: 1.4rem;
-                }
+                left: -40px;
             }
         }
-        &-form{
-            width: 50%;
-            @include respond(down-tab-port){
-                width: 100%;
-            }
+        .mail-logo{
+            margin-top: 4rem;
+            object-fit: contain;
+        }
+    }
+    &-r{
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+        p{
+            color: black;
+        }
+        form{
+            margin-top: 4rem;
             input{
                 border-radius: 10px;
                 height: 30px;
