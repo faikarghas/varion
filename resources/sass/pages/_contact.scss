@@ -2,6 +2,9 @@
     background-color: $color_lightGrey;
     margin-top: 110px;
     padding: 8rem 20rem;
+    @include respond(down-tab-port){
+        padding: 4rem;
+    }
     h3{
         font-size: 3rem;
         font-weight: 900;

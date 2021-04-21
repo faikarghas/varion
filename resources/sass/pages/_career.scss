@@ -1,6 +1,10 @@
 .section__career-first{
     margin-top: 200px;
     position: relative;
+    @include respond(down-tab-port){
+        padding: 4rem;
+        margin-top: 110px;
+    }
     h1{
         font-weight: 900;
         font-size: 4rem;
@@ -39,7 +43,6 @@
 }
 
 .section__career-second{
-    // padding: 10rem 0;
     ul{
         position: relative;
         padding: 0;
@@ -72,6 +75,14 @@
         }
         padding: 2rem 0;
         padding-left: 5rem;
+        @include respond(down-tab-port){
+            padding: 4rem;
+        }
+        &-desc,&-status{
+            @include respond(down-tab-port){
+                margin-bottom: 2rem;
+            }
+        }
         h4{
             font-weight: 900;
         }

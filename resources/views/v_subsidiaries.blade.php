@@ -3,8 +3,9 @@
 <div class="h_aks1"></div>
         <header class="position-relative">
             <menu class="menu__home">
-                <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset="" width="222px" height="40px"></div>
-                <div class="menu__home-link">
+                @include('components/presentational/menuMobile')
+                <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
+                <div class="menu__home-link forDesktop-dflex">
                     <ul>
                         <li><a href="">HOME</a></li>
                         <li><a href="{{route('about')}}">ABOUT US</a></li>
@@ -21,21 +22,32 @@
                         <li><a href="{{route('career')}}">CAREER</a></li>
                     </ul>
                 </div>
-                <div class="menu__home-navbar"></div>
+                <div class="menu__home-navbar forMobile">
+                    <ul>
+                        <li class="open_menu">
+                            <div id="menu-hamburger" class="">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </menu>
-            <div class="container about__header">
+            {{-- <div class="container about__header">
                 <div class="row">
                     <div class="col-12 mb-5">
                         <h1>WHEN GROWTH BECOMES<br/>OUR PASSION</h1>
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <div class="slider__header">
                 <ul class="aboutHeaderSlider">
                     <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-12 col-lg-4">
                                     <div class="slider__header-desc">
                                         <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
                                     </div>
@@ -46,7 +58,7 @@
                     <li style="background-image: url('https://source.unsplash.com/random/1255x501')">
                         <div class="container">
                             <div class="row">
-                                <div class="col-4">
+                                <div class="col-12 col-lg-4">
                                     <div class="slider__header-desc">
                                         <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
                                     </div>

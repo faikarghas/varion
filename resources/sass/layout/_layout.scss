@@ -1,27 +1,66 @@
 footer{
     background-color: black;
-    padding: 2rem 0;
-    .logo_footer{
-        object-fit: contain;
+    padding: 4rem 0;
+    .footer_logo{
+        @include respond(down-tab-port){
+            text-align: center;
+        }
+        .logo_footer{
+            object-fit: contain;
+            @include respond(down-tab-port){
+                text-align: center;
+            }
+        }
     }
-    ul{
-        padding: 0;
-        li{
-            list-style: none;
-            display: inline-block;
-            position: relative;
-            &:not(:last-child){
-                padding-right: 1.5rem;
-                &:after{
-                    content: "|";
-                    color: $color_darkGrey;
-                    position: absolute;
-                    right: -3px;
-                    font-size: 1.3rem;
+    .footer_sitemap{
+        &-addr{
+            padding: 0 3rem;
+            p{
+                color: white;
+            }
+        }
+        @include respond(down-tab-port){
+            text-align: center;
+        }
+        ul{
+            padding: 0;
+            margin-bottom: 15px;
+            li{
+                list-style: none;
+                display: inline-block;
+                position: relative;
+                &:not(:last-child){
+                    padding-right: 1.5rem;
+                    &:after{
+                        content: "|";
+                        color: $color_darkGrey;
+                        position: absolute;
+                        right: -3px;
+                        font-size: 1.3rem;
+                    }
+                }
+                &:not(:first-child){
+                    padding-left: 1.5rem;
+                }
+                a{
+                    @include respond(down-tab-port){
+                        color: white;
+                        font-size: 0.9rem;
+                    }
                 }
             }
-            &:not(:first-child){
-                padding-left: 1.5rem;
+        }
+    }
+    .footer_copyright{
+        justify-content: flex-end;
+        @include respond(down-tab-port){
+            text-align: center;
+            justify-content: center;
+        }
+        p{
+            @include respond(down-tab-port){
+                color: white;
+                font-size: 0.9rem;
             }
         }
     }

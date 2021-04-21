@@ -1,5 +1,9 @@
 require('./bootstrap');
 
+// ============================================== //
+// Header
+// ============================================== //
+
 let url = window.location.pathname
 
 $(window).on('scroll', function() {
@@ -12,6 +16,15 @@ $(window).on('scroll', function() {
         $('.menu__home').css('background-color','transparent')
     }
 });
+
+// ============================================== //
+//
+// ============================================== //
+
+
+// ============================================== //
+// Slider
+// ============================================== //
 
 $('.homeHeaderSlider').slick({
     arrows:false,
@@ -79,6 +92,15 @@ $('.slider-nav').slick({
     focusOnSelect: true,
 });
 
+
+// ============================================== //
+//
+// ============================================== //
+
+// ============================================== //
+// Career Image
+// ============================================== //
+
 let valLeft = 0
 let valLeft2 = 40
 let valTop = 0
@@ -94,3 +116,16 @@ for (let i = 1; i <= 5; i++) {
         $(`.section__career-second ul .item-${i}`).css('top',`-${valTop-45}px`)
     }
 }
+
+// ============================================== //
+//
+// ============================================== //
+
+
+$('.open_menu').on('click',function (params) {
+    $('#menu-hamburger').toggleClass('open')
+    $('#menu-hamburger span').toggleClass('bg-white')
+    $('.menu__mobileOverlay').toggleClass('open')
+    $('.menu__mobile').toggleClass('open')
+
+})

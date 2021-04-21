@@ -1,6 +1,9 @@
 header{
     .about__header{
         margin-top: 200px;
+        @include respond(down-tab-port){
+            padding: 0rem 4rem;
+        }
         h1{
             font-weight: 800;
         }
@@ -48,6 +51,9 @@ main{
     .section__about-first{
         padding: 8rem 0;
         position: relative;
+        @include respond(down-tab-port){
+            padding: 4rem 4rem;
+        }
         h4{
             font-size: 1.8rem;
             font-weight: 900;
@@ -63,6 +69,10 @@ main{
             display: block;
             width: 100%;
             height: 100%;
+            @include respond(down-tab-port){
+                height: 350px;
+                margin-top: 4rem;
+            }
             &-front{
                 width: 60%;
                 height: 190px;
@@ -70,6 +80,13 @@ main{
                 left: 106px;
                 bottom: 50px;
                 z-index: 2;
+                @include respond(down-tab-port){
+                    left: 105px;
+                    bottom: 77px;
+                }
+                img{
+                    object-fit: cover;
+                }
             }
             &-back{
                 width: 70%;
@@ -77,6 +94,13 @@ main{
                 position: absolute;
                 top: 0;
                 right: 0;
+                @include respond(down-tab-port){
+                    top: 0;
+                    left: 0;
+                }
+                img{
+                    object-fit: cover;
+                }
             }
         }
         .bg-mainAboutFirst{
@@ -101,6 +125,9 @@ main{
     .section__about-second{
         padding: 2rem 0 0rem 0;
         position: relative;
+        @include respond(down-tab-port){
+            padding: 4rem 4rem;
+        }
         .img__wrapper{
             height: 250px;
             margin-bottom: 3.5rem;

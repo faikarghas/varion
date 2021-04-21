@@ -4,7 +4,7 @@
             <div class="col-12">
                 <h3>CONTACT US</h3>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-lg-4 mb-5">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore autem fugit veritatis dolorem deleniti expedita inventore itaque dignissimos, deserunt consectetur quia commodi! Nisi similique consequuntur, veniam earum veritatis eius.</p>
             </div>
             <div class="col-12 col-lg-8">

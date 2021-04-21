@@ -1840,7 +1840,10 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
+__webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // ============================================== //
+// Header
+// ============================================== //
+
 
 var url = window.location.pathname;
 $(window).on('scroll', function () {
@@ -1853,7 +1856,13 @@ $(window).on('scroll', function () {
   } else {
     $('.menu__home').css('background-color', 'transparent');
   }
-});
+}); // ============================================== //
+//
+// ============================================== //
+// ============================================== //
+// Slider
+// ============================================== //
+
 $('.homeHeaderSlider').slick({
   arrows: false,
   dots: true // responsive: [
@@ -1909,7 +1918,13 @@ $('.slider-nav').slick({
   dots: false,
   arrows: false,
   focusOnSelect: true
-});
+}); // ============================================== //
+//
+// ============================================== //
+// ============================================== //
+// Career Image
+// ============================================== //
+
 var valLeft = 0;
 var valLeft2 = 40;
 var valTop = 0;
@@ -1926,7 +1941,17 @@ for (var i = 1; i <= 5; i++) {
     $(".section__career-second ul .item-".concat(i)).css('left', "".concat(valLeft - 300 - valLeft2, "px"));
     $(".section__career-second ul .item-".concat(i)).css('top', "-".concat(valTop - 45, "px"));
   }
-}
+} // ============================================== //
+//
+// ============================================== //
+
+
+$('.open_menu').on('click', function (params) {
+  $('#menu-hamburger').toggleClass('open');
+  $('#menu-hamburger span').toggleClass('bg-white');
+  $('.menu__mobileOverlay').toggleClass('open');
+  $('.menu__mobile').toggleClass('open');
+});
 
 /***/ }),
 

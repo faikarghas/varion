@@ -28,9 +28,12 @@ header{
                 width: 375px;
                 h1{
                     color: white;
-                    font-size: 3em;
+                    font-size: 3rem;
                     font-weight: 900;
                     margin-bottom: 1rem;
+                    @include respond(down-tab-port){
+                        font-size: 1.5rem;
+                    }
                 }
             }
             img{
@@ -177,7 +180,8 @@ main{
         }
         &-left{
             @include respond(down-tab-port){
-                padding-left: 4rem;
+                padding-left: 4.75rem;
+                padding-right: 20px;
             }
         }
     }

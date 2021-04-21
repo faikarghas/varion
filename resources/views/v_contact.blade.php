@@ -2,11 +2,12 @@
 @section('content')
 <div class="h_aks1"></div>
 <header class="position-relative">
-    <menu class="menu__home" style="background-color: #F4F4F5">
-        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset="" width="222px" height="40px"></div>
-        <div class="menu__home-link">
+    <menu class="menu__home">
+        @include('components/presentational/menuMobile')
+        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
+        <div class="menu__home-link forDesktop-dflex">
             <ul>
-                <li><a href="{{route('home')}}">HOME</a></li>
+                <li><a href="">HOME</a></li>
                 <li><a href="{{route('about')}}">ABOUT US</a></li>
                 <li class="dropdown_link">
                     <a href="">SUBSIDIARIES</a>
@@ -21,7 +22,18 @@
                 <li><a href="{{route('career')}}">CAREER</a></li>
             </ul>
         </div>
-        <div class="menu__home-navbar"></div>
+        <div class="menu__home-navbar forMobile">
+            <ul>
+                <li class="open_menu">
+                    <div id="menu-hamburger" class="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </menu>
 </header>
 <main>

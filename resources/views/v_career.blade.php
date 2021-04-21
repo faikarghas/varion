@@ -3,8 +3,9 @@
 <div class="h_aks1"></div>
 <header class="position-relative">
     <menu class="menu__home">
-        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset="" width="222px" height="40px"></div>
-        <div class="menu__home-link">
+        @include('components/presentational/menuMobile')
+        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
+        <div class="menu__home-link forDesktop-dflex">
             <ul>
                 <li><a href="">HOME</a></li>
                 <li><a href="{{route('about')}}">ABOUT US</a></li>
@@ -21,7 +22,18 @@
                 <li><a href="{{route('career')}}">CAREER</a></li>
             </ul>
         </div>
-        <div class="menu__home-navbar"></div>
+        <div class="menu__home-navbar forMobile">
+            <ul>
+                <li class="open_menu">
+                    <div id="menu-hamburger" class="">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </menu>
 </header>
 <main>
@@ -74,60 +86,60 @@
                 </div>
                 <div class="col-12 list__career">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="list__career-desc col-12 col-lg-6">
                             <h4>MARKETING MANAGER</h4>
                             <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
                                 DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
                                 MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
                                 QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
                             <ul>
                                 <li>Status  : Full Time</li>
                                 <li>Location  : Jakarta</li>
                             </ul>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-end">
+                        <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
                             <a class="btn-danger btn btn-join">Join Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 list__career">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="list__career-desc col-12 col-lg-6">
                             <h4>MARKETING MANAGER</h4>
                             <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
                                 DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
                                 MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
                                 QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
                             <ul>
                                 <li>Status  : Full Time</li>
                                 <li>Location  : Jakarta</li>
                             </ul>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-end">
+                        <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
                             <a class="btn-danger btn btn-join">Join Now</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-12 list__career">
                     <div class="row">
-                        <div class="col-6">
+                        <div class="list__career-desc col-12 col-lg-6">
                             <h4>MARKETING MANAGER</h4>
                             <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
                                 DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
                                 MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
                                 QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+                        <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
                             <ul>
                                 <li>Status  : Full Time</li>
                                 <li>Location  : Jakarta</li>
                             </ul>
                         </div>
-                        <div class="col-3 d-flex flex-column justify-content-center align-items-end">
+                        <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
                             <a class="btn-danger btn btn-join">Join Now</a>
                         </div>
                     </div>
