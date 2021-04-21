@@ -9,12 +9,15 @@
     </div>
     <div class="menu__mobile-link">
         <ul>
-            <li><a href="">PT VARION SUKSES MAKMUR</a></li>
-            <li><a href="">PT VARION AGRITECH INDONESIA</a></li>
-            <li><a href="">PT VARION AGRO SENTOSA</a></li>
-            <li><a href="">PT VARION CAPITAL MANAGEMENT</a></li>
-            <li><a href="">FUME KOPI INDONESIA - CAFE & RESTO</a></li>
-            <li><a href="">FUME KOPI INDONESIA - CONTAINER PROJECT</a></li>
+            <li><a href="{{route('about')}}">ABOUT</a></li>
+            <li><a href="{{route('contact')}}">CONTACT</a></li>
+            <li><a href="{{route('career')}}">CAREER</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION AGRITECH INDONESIA</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION AGRO SENTOSA</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION CAPITAL MANAGEMENT</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">FUME KOPI INDONESIA - CAFE & RESTO</a></li>
+            <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">FUME KOPI INDONESIA - CONTAINER PROJECT</a></li>
             <li><img src="{{asset('images/logo_black.png')}}" alt=""></li>
         </ul>
     </div>
