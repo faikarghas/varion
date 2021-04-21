@@ -1495,6 +1495,11 @@ main .section__subsidiaries-third .banner__subsidiaries-desc p {
 .section__contact-first-l {
   padding-right: 18rem !important;
 }
+@media only screen and (max-width: 62em) {
+  .section__contact-first-l {
+    padding-right: 0rem !important;
+  }
+}
 .section__contact-first-l ul {
   padding: 0;
   position: relative;

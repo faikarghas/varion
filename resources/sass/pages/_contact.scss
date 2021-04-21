@@ -11,6 +11,9 @@
     }
     &-l{
         padding-right: 18rem !important;
+        @include respond(down-tab-port){
+            padding-right: 0rem !important;
+        }
         ul{
             padding: 0;
             position: relative;

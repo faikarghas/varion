@@ -42,12 +42,12 @@
             <div class="row">
                 <div class="col-12 col-lg-6 section__contact-first-l">
                     <h3>OFFICE</h3>
-                    <ul class="contact__wrapper-r-info forDesktop">
+                    <ul class="contact__wrapper-r-info">
                         <li class="mb-4"><p>WISMA46 BUILDING, 45TH FLOOR JALAN JENDERAL SUDIRMAN, KAV-1, JAKARTA, 10220</p></li>
                         <li><p class="m-0">PHONE (+62) 6578.95000</p></li>
                         <li class="mb-4"><p>FAX (+62) 6578.95000</p></li>
                         <li><p>SUPPORT@VARION.CO.ID</p></li>
-                        <img class="loc_img" src="{{asset('images/office.svg')}}" width="25px" height="25px" alt="">
+                        <img class="loc_img forDesktop" src="{{asset('images/office.svg')}}" width="25px" height="25px" alt="">
                     </ul>
                     <img class="mail-logo" src="{{asset('images/contact.svg')}}" width="150px" alt="">
                 </div>
