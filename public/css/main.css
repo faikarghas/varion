@@ -419,7 +419,7 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
 
 .menu__mobile {
   width: 80%;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   left: -100%;
