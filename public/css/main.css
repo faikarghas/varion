@@ -458,7 +458,7 @@ header .menu__home-link .dropdown_link:hover .sub__menu {
   list-style: none;
   padding: 2rem 0;
 }
-.menu__mobile-link ul li:not(:nth-child(6)) {
+.menu__mobile-link ul li:not(:nth-child(9), :nth-child(10)) {
   border-bottom: 1px solid #0000002b;
 }
 .menu__mobile-link ul li:last-child {
