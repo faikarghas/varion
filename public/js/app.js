@@ -1840,6 +1840,9 @@ module.exports = {
   \*****************************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
+var _require = __webpack_require__(/*! axios */ "./node_modules/axios/index.js"),
+    axios = _require["default"];
+
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js"); // ============================================== //
 // Header
 // ============================================== //
@@ -1865,15 +1868,7 @@ $(window).on('scroll', function () {
 
 $('.homeHeaderSlider').slick({
   arrows: false,
-  dots: true // responsive: [
-  //     {
-  //       breakpoint: 600,
-  //       settings: {
-  //         dots:false
-  //       }
-  //     }
-  // ]
-
+  dots: true
 });
 $('.aboutHeaderSlider').slick({
   arrows: false,
@@ -1908,8 +1903,7 @@ $slickElement.on('init reInit afterChange', function (event, slick, currentSlide
   var i = (currentSlide ? currentSlide : 0) + 1; // $status.text(`0${i} / 0${slick.slideCount}`);
 
   $('.paging__info-curr').text("0".concat(i));
-  $('.paging__info-total').text("0".concat(slick.slideCount));
-  $('.box_number p').text("0".concat(i, "."));
+  $('.paging__info-total').text("0".concat(slick.slideCount)); // $('.box_number p').text(`0${i}.`)
 });
 $('.slider-nav').slick({
   slidesToShow: 1,
@@ -1918,6 +1912,16 @@ $('.slider-nav').slick({
   dots: false,
   arrows: false,
   focusOnSelect: true
+});
+$('.fume_cb2').slick({
+  prevArrow: $('.fume_prev1'),
+  nextArrow: $('.fume_next1')
+});
+$('.fume_cb3').slick({
+  prevArrow: $('.fume_prev2'),
+  nextArrow: $('.fume_next2'),
+  slidesToShow: 1,
+  slidesToScroll: 1
 }); // ============================================== //
 //
 // ============================================== //
@@ -1944,6 +1948,9 @@ for (var i = 1; i <= 5; i++) {
 } // ============================================== //
 //
 // ============================================== //
+// ============================================== //
+// Hamburger Menu
+// ============================================== //
 
 
 $('.open_menu').on('click', function (params) {
@@ -1951,7 +1958,9 @@ $('.open_menu').on('click', function (params) {
   $('#menu-hamburger span').toggleClass('bg-white');
   $('.menu__mobileOverlay').toggleClass('open');
   $('.menu__mobile').toggleClass('open');
-});
+}); // ============================================== //
+//
+// ============================================== //
 
 /***/ }),
 

@@ -2,50 +2,15 @@
 @section('content')
 <div class="h_aks1"></div>
 <header class="position-relative">
-    <menu class="menu__home">
-        @include('components/presentational/menuMobile')
-        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
-        <div class="menu__home-link forDesktop-dflex">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="{{route('about')}}">ABOUT US</a></li>
-                <li class="dropdown_link">
-                    <a href="">SUBSIDIARIES</a>
-                    <ul class="sub__menu">
-                        <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
-                        <li><a href="{{url('subsidiaries/fume-kopi-indonesia')}}">FUME KOPI INDONESIA</a></li>
-                        <li><a href="{{url('subsidiaries/pt-varion-agritech-indonesia')}}">PT VARION AGRITECH INDONESIA</a></li>
-                        <li><a href="{{url('subsidiaries/pt-varion-agro-sentosa')}}">PT VARION AGRO SENTOSA</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{route('contact')}}">CONTACT</a></li>
-                <li><a href="{{route('career')}}">CAREER</a></li>
-            </ul>
-        </div>
-        <div class="menu__home-navbar forMobile">
-            <ul>
-                <li class="open_menu">
-                    <div id="menu-hamburger" class="">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </menu>
+    @include('components/presentational/menu',['listMenu'=>$listMenu])
 </header>
 <main>
     <section class="section__career-first">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5">
-                    <h1 class="mb-5">JOIN OUR<br/>TEAM</h1>
-                    <p class="mb-5">Varion Capital Management as the core of Varion & Co. is a company
-                        involved in investment and business development, headquartered in Jakarta.
-                        We aim to drive the growth of existing business with potentials and promote
-                        new opportunities to committed investors.</p>
+                    <h1 class="mb-5">{{$title}}</h1>
+                    <p class="mb-5">{{$description}}</p>
                     <a href="">
                         <ul>
                             <li>VIEW JOB OPENING</li>
@@ -84,19 +49,17 @@
                 <div class="col-12 mb-5r">
                     <h2>OPEN POSITIONS</h2>
                 </div>
+                @foreach ($listCareer as $item)
                 <div class="col-12 list__career">
                     <div class="row">
                         <div class="list__career-desc col-12 col-lg-6">
-                            <h4>MARKETING MANAGER</h4>
-                            <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
-                                DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
-                                MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
-                                QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
+                            <h4>{{$item->name}}</h4>
+                            <p>{{$item->description}}</p>
                         </div>
                         <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
                             <ul>
-                                <li>Status  : Full Time</li>
-                                <li>Location  : Jakarta</li>
+                                <li>Status  : {{$item->status}}</li>
+                                <li>Location  : {{$item->location}}</li>
                             </ul>
                         </div>
                         <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
@@ -104,51 +67,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 list__career">
-                    <div class="row">
-                        <div class="list__career-desc col-12 col-lg-6">
-                            <h4>MARKETING MANAGER</h4>
-                            <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
-                                DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
-                                MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
-                                QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
-                        </div>
-                        <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
-                            <ul>
-                                <li>Status  : Full Time</li>
-                                <li>Location  : Jakarta</li>
-                            </ul>
-                        </div>
-                        <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
-                            <a class="btn-danger btn btn-join">Join Now</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 list__career">
-                    <div class="row">
-                        <div class="list__career-desc col-12 col-lg-6">
-                            <h4>MARKETING MANAGER</h4>
-                            <p>OREM IPSUM DOLOR SIT AMET, CONS ECTETUER ADIPISCING ELIT, SED JOIN NOW
-                                DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE
-                                MAGNA ALIQUAM ERAT VOLUTPAT. UT WISI ENIM AD MINIM VENIAM,
-                                QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL</p>
-                        </div>
-                        <div class="list__career-status col-12 col-lg-3 d-flex flex-column justify-content-lg-center justify-content-start align-items-start align-items-lg-center">
-                            <ul>
-                                <li>Status  : Full Time</li>
-                                <li>Location  : Jakarta</li>
-                            </ul>
-                        </div>
-                        <div class="list__career-join col-12 col-lg-3 d-flex flex-column justify-content-start justify-content-lg-center align-items-start align-items-lg-end">
-                            <a class="btn-danger btn btn-join">Join Now</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>
     <section class="section__career-contact">
-        @include('components/presentational/contact')
+        @include('components/presentational/contact',['country'=>$country])
     </section>
 </main>
 @endsection

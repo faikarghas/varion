@@ -10,8 +10,8 @@
     <div class="menu__mobile-link">
         <ul>
             <li><a href="{{route('about')}}">ABOUT</a></li>
-            <li><a href="{{route('contact')}}">CONTACT</a></li>
             <li><a href="{{route('career')}}">CAREER</a></li>
+            <li><a href="{{route('contact')}}">CONTACT</a></li>
             <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
             <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION AGRITECH INDONESIA</a></li>
             <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION AGRO SENTOSA</a></li>

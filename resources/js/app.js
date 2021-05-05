@@ -1,3 +1,5 @@
+const { default: axios } = require('axios');
+
 require('./bootstrap');
 
 // ============================================== //
@@ -29,14 +31,6 @@ $(window).on('scroll', function() {
 $('.homeHeaderSlider').slick({
     arrows:false,
     dots:true,
-    // responsive: [
-    //     {
-    //       breakpoint: 600,
-    //       settings: {
-    //         dots:false
-    //       }
-    //     }
-    // ]
 });
 
 $('.aboutHeaderSlider').slick({
@@ -80,7 +74,7 @@ $slickElement.on('init reInit afterChange', function(event, slick, currentSlide,
     // $status.text(`0${i} / 0${slick.slideCount}`);
     $('.paging__info-curr').text(`0${i}`)
     $('.paging__info-total').text(`0${slick.slideCount}`)
-    $('.box_number p').text(`0${i}.`)
+    // $('.box_number p').text(`0${i}.`)
 });
 
 $('.slider-nav').slick({
@@ -90,6 +84,18 @@ $('.slider-nav').slick({
     dots: false,
     arrows:false,
     focusOnSelect: true,
+});
+
+$('.fume_cb2').slick({
+    prevArrow: $('.fume_prev1'),
+    nextArrow: $('.fume_next1')
+});
+
+$('.fume_cb3').slick({
+    prevArrow: $('.fume_prev2'),
+    nextArrow: $('.fume_next2'),
+    slidesToShow: 1,
+    slidesToScroll: 1
 });
 
 
@@ -121,6 +127,9 @@ for (let i = 1; i <= 5; i++) {
 //
 // ============================================== //
 
+// ============================================== //
+// Hamburger Menu
+// ============================================== //
 
 $('.open_menu').on('click',function (params) {
     $('#menu-hamburger').toggleClass('open')
@@ -129,3 +138,7 @@ $('.open_menu').on('click',function (params) {
     $('.menu__mobile').toggleClass('open')
 
 })
+
+// ============================================== //
+//
+// ============================================== //

@@ -2,39 +2,7 @@
 @section('content')
 <div class="h_aks1"></div>
 <header class="position-relative">
-    <menu class="menu__home">
-        @include('components/presentational/menuMobile')
-        <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
-        <div class="menu__home-link forDesktop-dflex">
-            <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="{{route('about')}}">ABOUT US</a></li>
-                <li class="dropdown_link">
-                    <a href="">SUBSIDIARIES</a>
-                    <ul class="sub__menu">
-                        <li><a href="{{url('subsidiaries/pt-varion-sukses-makmur')}}">PT VARION SUKSES MAKMUR</a></li>
-                        <li><a href="{{url('subsidiaries/fume-kopi-indonesia')}}">FUME KOPI INDONESIA</a></li>
-                        <li><a href="{{url('subsidiaries/pt-varion-agritech-indonesia')}}">PT VARION AGRITECH INDONESIA</a></li>
-                        <li><a href="{{url('subsidiaries/pt-varion-agro-sentosa')}}">PT VARION AGRO SENTOSA</a></li>
-                    </ul>
-                </li>
-                <li><a href="{{route('contact')}}">CONTACT</a></li>
-                <li><a href="{{route('career')}}">CAREER</a></li>
-            </ul>
-        </div>
-        <div class="menu__home-navbar forMobile">
-            <ul>
-                <li class="open_menu">
-                    <div id="menu-hamburger" class="">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </menu>
+    @include('components/presentational/menu',['listMenu'=>$listMenu])
 
     <div class="container about__header">
         <div class="row">
@@ -45,7 +13,9 @@
     </div>
     <div class="slider__header m-0">
         <ul class="aboutHeaderSlider">
-            <li style="background-image: url('https://source.unsplash.com/random/1255x500')"></li>
+            @foreach ($slider as $item)
+                <li style="background-image: url('https://source.unsplash.com/random/1255x500')"></li>
+            @endforeach
         </ul>
     </div>
     <div class="bg-headerAbout"></div>
@@ -57,19 +27,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-5">
-                    <h4>PT VARION CAPITAL MANAGEMENT</h4>
-                    <h3>OUR MISSION IS FOR THE EXISTING<br/>
-                        NATIONAL INDUSTRY TO KEEP THRIVING<br/>
-                        AS THE WHOLE WORLD EVOLVES.</h3>
-                    <p>Varion Capital Management as the core of Varion & Co. is a company
-                        involved in investment and business development, headquartered in Jakarta.
-                        We aim to drive the growth of existing business with potentials and promote
-                        new opportunities to committed investors.</p>
-                    <p>We provide a comprehensive range of investment products & services
-                        including funds, portfolio management and advisory among others. As our
-                        team responsible for business management, we also given opportunity to
-                        creatively work and develop our own business and become project leader in
-                        the future and expanding Varion & Co. group.</p>
+                    <h4>{{$name}}</h4>
+                    <h3>{{$title}}</h3>
+                    {!! $description !!}
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="img__wrapper">
@@ -135,7 +95,7 @@
         </div>
     </section>
     <section class="section__about-contact">
-        @include('components/presentational/contact')
+        @include('components/presentational/contact',['country'=>$country])
     </section>
 </main>
 @endsection

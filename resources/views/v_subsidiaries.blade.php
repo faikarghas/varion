@@ -4,7 +4,7 @@
         <header class="position-relative">
             <menu class="menu__home">
                 @include('components/presentational/menuMobile')
-                <div class="menu__home-logo"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></div>
+                <div class="menu__home-logo"><a href="{{url('/')}}"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></a></div>
                 <div class="menu__home-link forDesktop-dflex">
                     <ul>
                         <li><a href="">HOME</a></li>
@@ -35,37 +35,21 @@
                     </ul>
                 </div>
             </menu>
-            {{-- <div class="container about__header">
-                <div class="row">
-                    <div class="col-12 mb-5">
-                        <h1>WHEN GROWTH BECOMES<br/>OUR PASSION</h1>
-                    </div>
-                </div>
-            </div> --}}
             <div class="slider__header">
                 <ul class="aboutHeaderSlider">
-                    <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <div class="slider__header-desc">
-                                        <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
+                    @foreach ($slider as $item)
+                        <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12 col-lg-4">
+                                        <div class="slider__header-desc">
+                                            <h1>{{$item->description}}</h1>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url('https://source.unsplash.com/random/1255x501')">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-12 col-lg-4">
-                                    <div class="slider__header-desc">
-                                        <h1>AT VARION&CO, WE CONSTANTLY GROW TO CONTRIBUTE & ENDLESSLY INNOVATE THROUGH TECHNOLOGY</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
+                        </li>
+                    @endforeach
                 </ul>
             </div>
             <div class="bg-headerAbout"></div>
@@ -77,7 +61,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h4>PT VARION SUKSES MAKMUR</h4>
+                            <h4>{{$name}}</h4>
                         </div>
                         <div class="col-12 col-lg-7">
                             <div class="img__wrapper">
@@ -86,18 +70,8 @@
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
-                            <h3>FAIRLY PRICED, SUSTAINABLY PRODUCED,<br/>
-                                HIGH-QUALITY COFFEE ALL THE WAY<br/>
-                                TO A CUP ISN’T EASY.</h3>
-                            <p>Varion Capital Management as the core of Varion & Co. is a company
-                                involved in investment and business development, headquartered in Jakarta.
-                                We aim to drive the growth of existing business with potentials and promote
-                                new opportunities to committed investors.</p>
-                            <p>We provide a comprehensive range of investment products & services
-                                including funds, portfolio management and advisory among others. As our
-                                team responsible for business management, we also given opportunity to
-                                creatively work and develop our own business and become project leader in
-                                the future and expanding Varion & Co. group.</p>
+                            <h3>{{$title}}</h3>
+                            {!! $description !!}
                         </div>
                     </div>
                 </div>
