@@ -52,7 +52,7 @@
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">INVESTMENT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+                        <p>{{$investment}}</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mb-5">
@@ -61,7 +61,7 @@
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">BUSINESS DEVELOPMENT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+                        <p>{{$business}}</p>
                     </div>
                 </div>
                 <div class="col-12 col-lg-4 mb-5">
@@ -70,7 +70,7 @@
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">CAPITAL MANAGEMENT</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
+                        <p>{{$capital}}</p>
                     </div>
                 </div>
                 <div class="col-12"><div class="hr mb-0"></div></div>
