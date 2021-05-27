@@ -19,7 +19,12 @@ class AboutController extends Controller
             'title' => $content->title,
             'description' => $content->description,
             'country'=> $globalData['listCountry']['result'],
-            'listMenu'=> $globalData['listMenu']
+            'listMenu'=> $globalData['listMenu'],
+            'descriptionCT' => $globalData['descriptionCT'],
+            'addressCT' => $globalData['addressCT'],
+            'phoneCT' => $globalData['phoneCT'],
+            'faxCT' => $globalData['faxCT'],
+            'emailCT' => $globalData['emailCT'],
         ];
 
 

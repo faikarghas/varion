@@ -32,9 +32,16 @@ class Controller extends BaseController
       $response = Http::get('https://api.printful.com/countries');
       $listCountry = $response->json();
       $listMenu = DB::table('subsidiaries')->select('name','slug')->get();
+      $contact = DB::table('contact_info')->get()->first();
+
       $data = [
         'listCountry' => $listCountry,
-        'listMenu' => $listMenu
+        'listMenu' => $listMenu,
+        'descriptionCT' => $contact->description,
+        'addressCT' => $contact->address,
+        'phoneCT' => $contact->phone,
+        'faxCT' => $contact->fax,
+        'emailCT' => $contact->email,
       ];
 
 

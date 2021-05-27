@@ -92,6 +92,8 @@ main{
     .section__subsidiaries-first{
         padding: 8rem 0;
         position: relative;
+        min-height: 50rem;
+        height: 50rem;
         @include respond(down-tab-port){
             padding: 4rem 4rem;
         }

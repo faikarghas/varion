@@ -17,7 +17,12 @@ class SubsidiariesController extends Controller
             $data = [
                 'slider' => $slider,
                 'country'=> $globalData['listCountry']['result'],
-                'listMenu'=> $globalData['listMenu']
+                'listMenu'=> $globalData['listMenu'],
+                'descriptionCT' => $globalData['descriptionCT'],
+                'addressCT' => $globalData['addressCT'],
+                'phoneCT' => $globalData['phoneCT'],
+                'faxCT' => $globalData['faxCT'],
+                'emailCT' => $globalData['emailCT'],
             ];
             return view('v_fumeKopi', $data);
         } else {
@@ -27,7 +32,12 @@ class SubsidiariesController extends Controller
                 'title' => $content->title,
                 'description' => $content->description,
                 'country'=> $globalData['listCountry']['result'],
-                'listMenu'=> $globalData['listMenu']
+                'listMenu'=> $globalData['listMenu'],
+                'descriptionCT' => $globalData['descriptionCT'],
+                'addressCT' => $globalData['addressCT'],
+                'phoneCT' => $globalData['phoneCT'],
+                'faxCT' => $globalData['faxCT'],
+                'emailCT' => $globalData['emailCT'],
             ];
 
             return view('v_subsidiaries', $data);

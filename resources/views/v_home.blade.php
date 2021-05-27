@@ -34,8 +34,8 @@
                             <div>
                                 <h3>OUR<br/>SUBSIDIARIES</h3>
                                 <h4>{{$item->name}}</h4>
-                                <h3 class="text-dark">{{$item->title}}</h3>
-                                <p class="sectionHome__subsidiaries-desc">{{$item->shortDescription}}</p>
+                                <h3 class="text-dark">{{$item->titleHome}}</h3>
+                                <p class="sectionHome__subsidiaries-desc">{{$item->shortDescriptionHome}}</p>
                                 <div class="learn__button-dark"><a href="{{route('home')}}">LEARN MORE</a></div>
                             </div>
                         @endforeach
@@ -68,7 +68,13 @@
         </ul>
     </section>
     <section class="sectionHome__contact">
-        @include('components/presentational/contact')
+        @include('components/presentational/contact',[
+                    'description'=>$descriptionCT,
+                    'addressCT'=>$addressCT,
+                    'phoneCT'=>$phoneCT,
+                    'faxCT'=>$faxCT,
+                    'emailCT'=>$emailCT
+        ])
     </section>
 </main>
 @endsection

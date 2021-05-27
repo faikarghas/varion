@@ -18,7 +18,12 @@ class HomeController extends Controller
             'slider' => $slider,
             'content' => $content,
             'country'=> $globalData['listCountry']['result'],
-            'listMenu'=> $globalData['listMenu']
+            'listMenu'=> $globalData['listMenu'],
+            'descriptionCT' => $globalData['descriptionCT'],
+            'addressCT' => $globalData['addressCT'],
+            'phoneCT' => $globalData['phoneCT'],
+            'faxCT' => $globalData['faxCT'],
+            'emailCT' => $globalData['emailCT'],
         ];
 
         return view('v_home',$data);

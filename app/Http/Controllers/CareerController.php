@@ -18,7 +18,12 @@ class CareerController extends Controller
             'title'=> $careerInfo->title,
             'description'=> $careerInfo->description,
             'country'=> $globalData['listCountry']['result'],
-            'listMenu'=> $globalData['listMenu']
+            'listMenu'=> $globalData['listMenu'],
+            'descriptionCT' => $globalData['descriptionCT'],
+            'addressCT' => $globalData['addressCT'],
+            'phoneCT' => $globalData['phoneCT'],
+            'faxCT' => $globalData['faxCT'],
+            'emailCT' => $globalData['emailCT'],
         ];
 
         return view('v_career',$data);

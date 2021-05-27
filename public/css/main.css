@@ -1219,6 +1219,8 @@ header .aboutHeaderSlider .slick-dots li {
 main .section__subsidiaries-first {
   padding: 8rem 0;
   position: relative;
+  min-height: 50rem;
+  height: 50rem;
 }
 @media only screen and (max-width: 62em) {
   main .section__subsidiaries-first {

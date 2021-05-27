@@ -131,7 +131,13 @@
                 </div>
             </section>
             <section class="section__subsidiaries-contact">
-                @include('components/presentational/contact')
+                @include('components/presentational/contact',[
+                    'description'=>$descriptionCT,
+                    'addressCT'=>$addressCT,
+                    'phoneCT'=>$phoneCT,
+                    'faxCT'=>$faxCT,
+                    'emailCT'=>$emailCT
+                ])
             </section>
         </main>
 @endsection

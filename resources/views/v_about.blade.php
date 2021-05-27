@@ -95,7 +95,13 @@
         </div>
     </section>
     <section class="section__about-contact">
-        @include('components/presentational/contact',['country'=>$country])
+        @include('components/presentational/contact',[
+                    'description'=>$descriptionCT,
+                    'addressCT'=>$addressCT,
+                    'phoneCT'=>$phoneCT,
+                    'faxCT'=>$faxCT,
+                    'emailCT'=>$emailCT
+        ])
     </section>
 </main>
 @endsection
