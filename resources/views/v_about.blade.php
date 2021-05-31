@@ -14,7 +14,7 @@
     <div class="slider__header m-0">
         <ul class="aboutHeaderSlider">
             @foreach ($slider as $item)
-                <li style="background-image: url('https://source.unsplash.com/random/1255x500')"></li>
+                <li style="background-image: url('{{asset('images/VarionCapitalManag-1.jpg')}}')"></li>
             @endforeach
         </ul>
     </div>
@@ -33,8 +33,8 @@
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="img__wrapper">
-                        <div class="img__wrapper-front"><img src="https://source.unsplash.com/random/1255x500" width="100%" height="100%" alt=""></div>
-                        <div class="img__wrapper-back"><img src="https://source.unsplash.com/random/1255x501" width="100%" height="100%"     alt=""></div>
+                        <div class="img__wrapper-front"><img src="{{asset('images/VarionCapitalManag-2.jpg')}}" width="100%" height="100%" alt=""></div>
+                        <div class="img__wrapper-back"><img src="{{asset('images/VarionCapitalManag-2-2.jpg')}}" width="100%" height="100%"     alt=""></div>
                     </div>
                 </div>
             </div>
@@ -48,7 +48,7 @@
                 <div class="col-12"><div class="hr"></div></div>
                 <div class="col-12 col-lg-4 mb-5">
                     <div class="img__wrapper">
-                        <img src="https://source.unsplash.com/random/1255x701" width="100%" height="100%" alt="">
+                        <img src="{{asset('images/VarionCapitalManag-11.jpg')}}" width="100%" height="100%" alt="">
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">INVESTMENT</h3>
@@ -57,7 +57,7 @@
                 </div>
                 <div class="col-12 col-lg-4 mb-5">
                     <div class="img__wrapper">
-                        <img src="https://source.unsplash.com/random/1255x702" width="100%" height="100%" alt="">
+                        <img src="{{asset('images/VarionCapitalManag-12.jpg')}}" width="100%" height="100%" alt="">
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">BUSINESS DEVELOPMENT</h3>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="col-12 col-lg-4 mb-5">
                     <div class="img__wrapper">
-                        <img src="https://source.unsplash.com/random/1255x703" width="100%" height="100%" alt="">
+                        <img src="{{asset('images/VarionCapitalManag-13.jpg')}}" width="100%" height="100%" alt="">
                     </div>
                     <div class="desc__wrapper">
                         <h3 class="mb-4">CAPITAL MANAGEMENT</h3>
@@ -85,9 +85,10 @@
                     <div class="partner__wrapper">
                         <h3>OUR PARTNERS</h3>
                         <ul>
-                            <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
-                            <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
-                            <li><img src="{{asset('/images/varion.png')}}" alt=""></li>
+                            <li><img src="{{asset('/images/itochu_logo.png')}}" alt=""></li>
+                            <li><img src="{{asset('/images/joycare_logo.png')}}" alt=""></li>
+                            <li><img src="{{asset('/images/obayasi_logo.png')}}" alt=""></li>
+                            <li><img src="{{asset('/images/salim_logo.png')}}" alt=""></li>
                         </ul>
                     </div>
                 </div>

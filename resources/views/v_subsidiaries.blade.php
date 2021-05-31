@@ -37,19 +37,10 @@
             </menu>
             <div class="slider__header">
                 <ul class="aboutHeaderSlider">
-                    @foreach ($slider as $item)
-                        <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-12 col-lg-4">
-                                        <div class="slider__header-desc">
-                                            <h1>{{$item->description}}</h1>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    @endforeach
+                    <li class="aboutHeaderSlider-item">
+                        <div class="left-img"><img src="{{asset('images')}}/{{$imageHeader1}}" alt="fume-img1" width="100%"></div>
+                        {{-- <div class="right-img"><img src="{{asset('images')}}/{{$imageHeader2}}" alt="fume-img1" width="100%"></div> --}}
+                    </li>
                 </ul>
             </div>
             <div class="bg-headerAbout"></div>
@@ -65,8 +56,8 @@
                         </div>
                         <div class="col-12 col-lg-7">
                             <div class="img__wrapper">
-                                <div class="img__wrapper-front"><img src="https://source.unsplash.com/random/1255x500" width="100%" height="100%" alt=""></div>
-                                <div class="img__wrapper-back"><img src="https://source.unsplash.com/random/1255x501" width="100%" height="100%"     alt=""></div>
+                                <div class="img__wrapper-front"><img src="{{asset('images')}}/{{$imageFront}}" width="100%" height="100%" alt=""></div>
+                                <div class="img__wrapper-back"><img src="{{asset('images')}}/{{$imageBack}}" width="100%" height="100%"     alt=""></div>
                             </div>
                         </div>
                         <div class="col-12 col-lg-5">
@@ -83,7 +74,7 @@
                     <div class="row">
                         <div class="col-12 col-lg-4 mb-5">
                             <div class="img__wrapper">
-                                <img src="https://source.unsplash.com/random/1255x701" width="100%" height="100%" alt="">
+                                <img src="{{asset('images')}}/{{$imageInvestment}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
                                 <h3 class="mb-4">INVESTMENT</h3>
@@ -92,7 +83,7 @@
                         </div>
                         <div class="col-12 col-lg-4 mb-5">
                             <div class="img__wrapper">
-                                <img src="https://source.unsplash.com/random/1255x702" width="100%" height="100%" alt="">
+                                <img src="{{asset('images')}}/{{$imageBusiness}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
                                 <h3 class="mb-4">BUSINESS DEVELOPMENT</h3>
@@ -101,7 +92,7 @@
                         </div>
                         <div class="col-12 col-lg-4 mb-5">
                             <div class="img__wrapper">
-                                <img src="https://source.unsplash.com/random/1255x703" width="100%" height="100%" alt="">
+                                <img src="{{asset('images')}}/{{$imageCapital}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
                                 <h3 class="mb-4">CAPITAL MANAGEMENT</h3>
@@ -113,7 +104,7 @@
                 <div class="bg-mainSubsiSecond"></div>
             </section>
             <section class="section__subsidiaries-third">
-                <div class="banner__subsidiaries" style="background-image: url('https://source.unsplash.com/random/1255x1200')">
+                <div class="banner__subsidiaries" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
                     <div class="container">
                         <div class="row">
                             <div class="col-12">

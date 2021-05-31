@@ -6,8 +6,8 @@
 </header>
 <main>
     <section class="section__fume-first">
-        <div class="left-img"><img src="https://source.unsplash.com/400x340" alt="fume-img1" width="100%"></div>
-        <div class="right-img"><img src="https://source.unsplash.com/900x340" alt="fume-img1" width="100%"></div>
+        <div class="left-img"><img src="{{asset('images/fume-2.jpg')}}" alt="fume-img1" width="100%"></div>
+        <div class="right-img"><img src="{{asset('images/fume-3.jpg')}}" alt="fume-img1" width="100%"></div>
     </section>
     <section class="section__fume-second">
         <div class="container">
@@ -75,12 +75,12 @@
                     <div class="row g-lg-0" style="height: 100%;">
                         <div class="col-6 cb_wr2-1">
                             <div class="content-border2">
-                                <img src="{{asset('images/map-indo.png')}}" alt="fume cup" >
+                                <img src="{{asset('images/fume-map.png')}}" alt="fume cup" >
                             </div>
                         </div>
                         <div class="col-6 cb_wr2-1">
                             <div class="content-border2">
-                                <img src="{{asset('images/roasting.png')}}" alt="fume cup" >
+                                <img src="{{asset('images/fume-roasting.png')}}" alt="fume cup" >
                             </div>
                         </div>
                         <div class="col-lg-12 cb_wr2-1">
@@ -110,14 +110,14 @@
                         <div class="content-border--sliderWrapper">
                             <div class="fume_cb3">
                                 <div>
+                                    <img src="{{asset('images/fume-roasting.png')}}" alt="fume cup" width="100%">
+                                </div>
+                                {{-- <div>
                                     <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
                                 </div>
                                 <div>
                                     <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
-                                </div>
-                                <div>
-                                    <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
-                                </div>
+                                </div> --}}
                             </div>
                             <ul class="fume_cb2_arrow">
                                 <li class="fume_prev2">prev</li>
@@ -138,11 +138,11 @@
     </section>
     <section class="section__fume-third">
         <div class="banner_wrapper">
-            <div class="banner_wrapper-left" style="background-image: url('https://source.unsplash.com/400x340')">
+            <div class="banner_wrapper-left" style="background-image: url('{{asset('images/fume-4.png')}}')">
                 {{-- <img src="https://source.unsplash.com/400x340" alt="banner"> --}}
                 <div class="desc"><h4>FUME KERTANEGARA<br/>BREWING SOON<br/>IN AUGUST 2021</h4></div>
             </div>
-            <div class="banner_wrapper-right" style="background-image: url('https://source.unsplash.com/700x340')">
+            <div class="banner_wrapper-right" style="background-image: url('{{asset('images/fume-5.png')}}')">
                 {{-- <img src="https://source.unsplash.com/700x340" alt="banner"> --}}
                 <div class="desc"><h4>PLANTATION &<br/>PROCESSING</h4></div>
                 <div class="btn-readMore">

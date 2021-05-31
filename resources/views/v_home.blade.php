@@ -4,7 +4,7 @@
     @include('components/presentational/menu',['listMenu'=>$listMenu])
     <div class="slider__header" page="home">
         <ul class="homeHeaderSlider">
-            @foreach ($slider as $item)
+            {{-- @foreach ($slider as $item)
                 <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
                     <div class="container">
                         <div class="row">
@@ -17,7 +17,15 @@
                         </div>
                     </div>
                 </li>
-            @endforeach
+            @endforeach --}}
+            <li class="homeHeaderSlider-item">
+                <div class="left-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
+                <div class="right-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%"></div>
+            </li>
+            <li class="homeHeaderSlider-item">
+                <div class="left-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
+                <div class="right-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%"></div>
+            </li>
         </ul>
     </div>
     <div class="bg-headerHome"></div>
@@ -49,7 +57,7 @@
                     </div>
                     <ul class="slider-nav">
                         @foreach ($content as $key => $item)
-                            <li><img src="https://source.unsplash.com/random/745x360" width="100%" height="360px" alt=""><div class="box_number"><p>0{{$key + 1}}.</p></div></li>
+                            <li><img src="{{asset('images')}}/{{$item->imageHome}}" width="100%" height="360px" alt=""><div class="box_number"><p>0{{$key + 1}}.</p></div></li>
                         @endforeach
                     </ul>
                 </div>
