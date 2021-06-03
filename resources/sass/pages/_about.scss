@@ -29,18 +29,52 @@ header{
         z-index: -1;
     }
 
-    .aboutHeaderSlider{
+    .aboutHeaderSliderr{
         padding: 0;
         list-style-type: none;
         position: relative;
         margin: 0;
-        li{
+
+        &-item{
+            display: flex !important;
+            height: 400px;
             position: relative;
-            height: 340px;
-            img{
-                width: 100%;
+            align-items: center;
+            @include respond(down-tab-port){
+                height: 300px;
+            }
+            &--desc{
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                display: inline-block;
+                width: 45%;
+                transform: translateY(-50%);
+                h1{
+                    color: white;
+                    font-size: 4.5rem;
+                    font-weight: 800;
+                    padding-bottom: 2rem;
+                    line-height: 1em;
+                }
+            }
+            .left-img{
+                width: 40%;
                 height: 100%;
-                object-fit: cover;
+                position: relative;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .right-img{
+                width: 60%;
+                height: 100%;
+                position: relative;
+                img{
+                    height: 100%;
+                    object-fit: cover;
+                }
             }
         }
     }

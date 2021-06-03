@@ -1017,18 +1017,56 @@ header .bg-headerAbout2 {
   background-color: #F4F4F5;
   z-index: -1;
 }
-header .aboutHeaderSlider {
+header .aboutHeaderSliderr {
   padding: 0;
   list-style-type: none;
   position: relative;
   margin: 0;
 }
-header .aboutHeaderSlider li {
+header .aboutHeaderSliderr-item {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  height: 400px;
   position: relative;
-  height: 340px;
+  align-items: center;
 }
-header .aboutHeaderSlider li img {
-  width: 100%;
+@media only screen and (max-width: 62em) {
+  header .aboutHeaderSliderr-item {
+    height: 300px;
+  }
+}
+header .aboutHeaderSliderr-item--desc {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: inline-block;
+  width: 45%;
+  transform: translateY(-50%);
+}
+header .aboutHeaderSliderr-item--desc h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  line-height: 1em;
+}
+header .aboutHeaderSliderr-item .left-img {
+  width: 40%;
+  height: 100%;
+  position: relative;
+}
+header .aboutHeaderSliderr-item .left-img img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+header .aboutHeaderSliderr-item .right-img {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+header .aboutHeaderSliderr-item .right-img img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;

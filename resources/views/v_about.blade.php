@@ -12,9 +12,13 @@
         </div>
     </div>
     <div class="slider__header m-0">
-        <ul class="aboutHeaderSlider">
+        <ul class="aboutHeaderSliderr">
             @foreach ($slider as $item)
-                <li style="background-image: url('{{asset('images/VarionCapitalManag-1.jpg')}}')"></li>
+                {{-- <li style="background-image: url('{{asset('images/VarionCapitalManag-2-2.jpg')}}')"></li> --}}
+                <li class="aboutHeaderSliderr-item">
+                    <div class="left-img"><img src="{{asset('images/VarionCapitalManag-2.jpg')}}" alt="fume-img1" width="100%"></div>
+                    <div class="right-img"><img src="{{asset('images/VarionCapitalManag-2-2.jpg')}}" alt="fume-img1" width="100%"></div>
+                </li>
             @endforeach
         </ul>
     </div>
@@ -33,8 +37,8 @@
                 </div>
                 <div class="col-12 col-lg-7">
                     <div class="img__wrapper">
-                        <div class="img__wrapper-front"><img src="{{asset('images/VarionCapitalManag-2.jpg')}}" width="100%" height="100%" alt=""></div>
-                        <div class="img__wrapper-back"><img src="{{asset('images/VarionCapitalManag-2-2.jpg')}}" width="100%" height="100%"     alt=""></div>
+                        <div class="img__wrapper-front"><img src="{{asset('images/VarionCapitalManag-c2.jpg')}}" width="100%" height="100%" alt=""></div>
+                        <div class="img__wrapper-back"><img src="{{asset('images/VarionCapitalManag-c1.jpg')}}" width="100%" height="100%"     alt=""></div>
                     </div>
                 </div>
             </div>
