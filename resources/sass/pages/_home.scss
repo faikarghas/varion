@@ -1,3 +1,5 @@
+// 37%
+
 header{
     .bg-headerHome{
         position: absolute;
@@ -9,6 +11,7 @@ header{
         z-index: -1;
     }
     .homeHeaderSlider{
+        margin-bottom: 0;
         padding: 0;
         list-style-type: none;
         position: relative;
@@ -40,7 +43,7 @@ header{
                 }
             }
             .left-img{
-                width: 65%;
+                width: 69%;
                 position: relative;
                 img{
                     height: 100%;
@@ -48,7 +51,7 @@ header{
                 }
             }
             .right-img{
-                width: 35%;
+                width: 33%;
                 position: relative;
                 img{
                     height: 100%;
@@ -227,6 +230,14 @@ main{
             @include respond(down-tab-port){
                 padding-left: 4.75rem;
                 padding-right: 20px;
+            }
+        }
+        .slick-slide{
+            div{
+                height: 100%;
+                li{
+                    height: 100%;
+                }
             }
         }
     }

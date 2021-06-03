@@ -61,11 +61,11 @@
     </section>
     <section class="sectionHome__slider">
         <ul class="homeSectionSlider">
-            <li><img src="https://source.unsplash.com/random/430x430" alt="" width="100%" height="100%"></li>
-            <li><img src="https://source.unsplash.com/random/430x431" alt="" width="100%" height="100%"></li>
-            <li><img src="https://source.unsplash.com/random/430x432" alt="" width="100%" height="100%"></li>
-            <li><img src="https://source.unsplash.com/random/430x433" alt="" width="100%" height="100%"></li>
-            <li><img src="https://source.unsplash.com/random/430x434" alt="" width="100%" height="100%"></li>
+            <li><img src="{{asset('images/Varionsuksesmakmur-3.jpg')}}" alt="" width="100%" height="100%"></li>
+            <li><img src="{{asset('images/VarionagritechIndo-4.jpg')}}" alt="" width="100%" height="100%"></li>
+            <li><img src="{{asset('images/VarionAgroSentosa-12.jpg')}}" alt="" width="100%" height="100%"></li>
+            <li><img src="{{asset('images/fume-4.png')}}" alt="" width="100%" height="100%"></li>
+            <li><img src="{{asset('images/VarionagritechIndo-3.jpg')}}" alt="" width="100%" height="100%"></li>
         </ul>
     </section>
     <section class="sectionHome__contact">

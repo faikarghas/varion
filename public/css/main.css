@@ -689,6 +689,7 @@ header .bg-headerHome {
   z-index: -1;
 }
 header .homeHeaderSlider {
+  margin-bottom: 0;
   padding: 0;
   list-style-type: none;
   position: relative;
@@ -727,7 +728,7 @@ header .homeHeaderSlider-item--desc h1 {
   line-height: 1em;
 }
 header .homeHeaderSlider-item .left-img {
-  width: 65%;
+  width: 69%;
   position: relative;
 }
 header .homeHeaderSlider-item .left-img img {
@@ -736,7 +737,7 @@ header .homeHeaderSlider-item .left-img img {
      object-fit: cover;
 }
 header .homeHeaderSlider-item .right-img {
-  width: 35%;
+  width: 33%;
   position: relative;
 }
 header .homeHeaderSlider-item .right-img img {
@@ -929,6 +930,12 @@ main .sectionHome__subsidiaries-right .box_number p {
     padding-left: 4.75rem;
     padding-right: 20px;
   }
+}
+main .sectionHome__subsidiaries .slick-slide div {
+  height: 100%;
+}
+main .sectionHome__subsidiaries .slick-slide div li {
+  height: 100%;
 }
 main .sectionHome__slider {
   height: 300px;
