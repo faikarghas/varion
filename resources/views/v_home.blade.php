@@ -8,7 +8,7 @@
                 <li class="homeHeaderSlider-item">
                     <div class="left-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%">
                         <div class="homeHeaderSlider-item--desc forDesktop">
-                            <h1>{{$item->description}}</h1>
+                            <h1>{!!$item->description!!}</h1>
                             <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
                         </div>
                     </div>
