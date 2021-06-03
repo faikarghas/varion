@@ -29,7 +29,7 @@ header{
                 top: 50%;
                 left: 10%;
                 display: inline-block;
-                width: 30%;
+                width: 45%;
                 transform: translateY(-50%);
                 h1{
                     color: white;
@@ -37,7 +37,7 @@ header{
             }
             .left-img{
                 width: 65%;
-                // height: 340px;
+                position: relative;
                 img{
                     height: 100%;
                     object-fit: cover;
@@ -45,10 +45,19 @@ header{
             }
             .right-img{
                 width: 35%;
-                // height: 340px;
+                position: relative;
                 img{
                     height: 100%;
                     object-fit: cover;
+                }
+                .logo_varion{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    img{
+                        width: 300px;
+                    }
                 }
             }
         }

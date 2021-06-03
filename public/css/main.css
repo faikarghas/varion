@@ -716,7 +716,7 @@ header .homeHeaderSlider-item--desc {
   top: 50%;
   left: 10%;
   display: inline-block;
-  width: 30%;
+  width: 45%;
   transform: translateY(-50%);
 }
 header .homeHeaderSlider-item--desc h1 {
@@ -724,6 +724,7 @@ header .homeHeaderSlider-item--desc h1 {
 }
 header .homeHeaderSlider-item .left-img {
   width: 65%;
+  position: relative;
 }
 header .homeHeaderSlider-item .left-img img {
   height: 100%;
@@ -732,11 +733,21 @@ header .homeHeaderSlider-item .left-img img {
 }
 header .homeHeaderSlider-item .right-img {
   width: 35%;
+  position: relative;
 }
 header .homeHeaderSlider-item .right-img img {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+header .homeHeaderSlider-item .right-img .logo_varion {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+header .homeHeaderSlider-item .right-img .logo_varion img {
+  width: 300px;
 }
 header .homeHeaderSlider .slick-dots {
   position: absolute;

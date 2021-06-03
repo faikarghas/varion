@@ -12,7 +12,11 @@
                             <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
                         </div>
                     </div>
-                    <div class="right-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
+                    <div class="right-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%">
+                        <div class="logo_varion">
+                            <img class="" src="{{asset('images/varion_logo_white.png')}}" alt="">
+                        </div>
+                    </div>
                 </li>
             @endforeach
         </ul>
