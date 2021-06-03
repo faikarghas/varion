@@ -28,8 +28,10 @@ class SubsidiariesController extends Controller
         } else {
             $data = [
                 'slider' => $slider,
+                'slug' => $content->slug,
                 'name' => $content->name,
                 'title' => $content->title,
+                'titleHeader' => $content->titleHeader,
                 'description' => $content->description,
                 'imageFront' => $content->imageFront,
                 'imageBack' => $content->imageBack,
@@ -40,6 +42,9 @@ class SubsidiariesController extends Controller
                 'imageCapital' => $content->imageCapital,
                 'imageFooter' => $content->imageFooter,
                 'imageFooter2' => $content->imageFooter2,
+                'imageFooterDesc' => $content->imageFooterDesc,
+                'imageFooter2Desc' => $content->imageFooter2Desc,
+                'imageFooterType' => $content->imageFooterType,
                 'country'=> $globalData['listCountry']['result'],
                 'listMenu'=> $globalData['listMenu'],
                 'descriptionCT' => $globalData['descriptionCT'],

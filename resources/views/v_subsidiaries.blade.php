@@ -38,7 +38,9 @@
             <div class="slider__header">
                 <ul class="aboutHeaderSlider">
                     <li class="aboutHeaderSlider-item">
-                        <div class="left-img"><img src="{{asset('images')}}/{{$imageHeader1}}" alt="fume-img1" width="100%"></div>
+                        <div class="left-img"><img src="{{asset('images')}}/{{$imageHeader1}}" alt="fume-img1" width="100%">
+                            <div class="desc"><h4>{!!$titleHeader!!}</h4></div>
+                        </div>
                         {{-- <div class="right-img"><img src="{{asset('images')}}/{{$imageHeader2}}" alt="fume-img1" width="100%"></div> --}}
                     </li>
                 </ul>
@@ -77,7 +79,11 @@
                                 <img src="{{asset('images')}}/{{$imageInvestment}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">PLANTATION</h3>
+                                @if ($slug ===  'pt-varion-sukses-makmur')
+                                    <h3 class="mb-4">PLANTATION</h3>
+                                @else
+                                    <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
+                                @endif
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
@@ -86,7 +92,11 @@
                                 <img src="{{asset('images')}}/{{$imageBusiness}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">PROCESSING</h3>
+                                @if ($slug ===  'pt-varion-sukses-makmur')
+                                    <h3 class="mb-4">PROCESSING</h3>
+                                @else
+                                    <h3 class="mb-4">FARMING</h3>
+                                @endif
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
@@ -95,7 +105,11 @@
                                 <img src="{{asset('images')}}/{{$imageCapital}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">TRADING</h3>
+                                @if ($slug ===  'pt-varion-sukses-makmur')
+                                    <h3 class="mb-4">TRADING</h3>
+                                @else
+                                    <h3 class="mb-4">DISTRIBUTION</h3>
+                                @endif
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
@@ -104,22 +118,44 @@
                 <div class="bg-mainSubsiSecond"></div>
             </section>
             <section class="section__subsidiaries-third">
-                <div class="banner__subsidiaries" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="banner__subsidiaries-desc">
-                                    <h2 class="mb-4">WILL BE ON THEM<br/> MARKET IN 2022</h2>
-                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                        diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                        magna aliquam erat volutpat. Ut wisi enim ad minim
-                                        veniam, quis nostrud exerci tation ullamcorper suscipit
-                                        loborti.</p>
+                @if ($imageFooterType === 1)
+                    <div class="banner_wrapper">
+                        <div class="banner_wrapper-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
+                            <div class="desc">{!!$imageFooterDesc!!}</div>
+                        </div>
+                        <div class="banner_wrapper-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
+                            <div class="desc">{!!$imageFooter2Desc!!}</div>
+                            <div class="btn-readMore">
+                                <a href="">READ MORE</a>
+                            </div>
+                        </div>
+                    </div>
+                @elseif ($imageFooterType === 2)
+                <div class="banner_wrapper2">
+                    <div class="banner_wrapper2-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
+                        <div class="desc">{!!$imageFooterDesc!!}</div>
+                    </div>
+                    <div class="banner_wrapper2-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')"></div>
+                </div>
+                @else
+                    <div class="banner__subsidiaries" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="banner__subsidiaries-desc">
+                                        <h2 class="mb-4">WILL BE ON THEM<br> MARKET IN 2022</h2>
+                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
+                                            diam nonummy nibh euismod tincidunt ut laoreet dolore
+                                            magna aliquam erat volutpat. Ut wisi enim ad minim
+                                            veniam, quis nostrud exerci tation ullamcorper suscipit
+                                            loborti.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                @endif
+
             </section>
             <section class="section__subsidiaries-contact">
                 @include('components/presentational/contact',[
