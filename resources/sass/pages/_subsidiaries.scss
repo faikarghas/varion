@@ -94,7 +94,7 @@ main{
         h4{
             font-size: 1.8rem;
             font-weight: 900;
-            margin-bottom: 10rem;
+            margin-bottom: 8rem;
         }
         h3{
             font-size: 1.9rem;
@@ -115,7 +115,7 @@ main{
                 height: 190px;
                 position: absolute;
                 right: 106px;
-                bottom: 0;
+                bottom: -122%;
                 z-index: 2;
                 @include respond(down-tab-port){
                     left: 105px;
