@@ -27,9 +27,7 @@
                 </div>
                 <div class="col-lg-6 cb_wr order-1 order-lg-2">
                     <div class="content-border">
-                        <h2>FUME</h2>
-                        <h5>COFFE</h5>
-                        <h5>& KITCHEN</h5>
+                        <img src="{{asset('images/fume_kitchen_logo.png')}}" alt="fume cup" width="200px">
                     </div>
                 </div>
                 <div class="col-6 col-lg-3 cb_wr order-3 order-lg-3">
@@ -102,7 +100,7 @@
             <div class="row g-lg-0">
                 <div class="col-6 cb_wr3">
                     <div class="content-border">
-                        <img src="{{asset('images/jsk.png')}}" alt="fume cup" width="140px">
+                        <img src="{{asset('images/japanese_chef_icon.png')}}" alt="fume cup" width="140px">
                     </div>
                 </div>
                 <div class="col-6 cb_wr3">

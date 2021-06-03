@@ -1760,7 +1760,7 @@ main .section__fume-second .title_wrapper .title {
   font-weight: 900;
 }
 main .section__fume-second .cb_wr {
-  border: 1px solid white;
+  border: 1px solid #ffffff47;
 }
 @media only screen and (max-width: 62em) {
   main .section__fume-second .cb_wr {
@@ -1774,7 +1774,7 @@ main .section__fume-second .cb_wr:nth-child(1) {
 }
 @media only screen and (max-width: 62em) {
   main .section__fume-second .cb_wr:nth-child(1) {
-    border-right: 1px solid white;
+    border-right: 1px solid #ffffff47;
   }
 }
 main .section__fume-second .cb_wr:nth-child(3) {
@@ -1802,11 +1802,11 @@ main .section__fume-second .cb_wr .content-border img {
      object-fit: contain;
 }
 main .section__fume-second .cb_wr2 {
-  border-top: 1px solid white;
-  border-bottom: 1px solid white;
+  border-top: 1px solid #ffffff47;
+  border-bottom: 1px solid #ffffff47;
 }
 main .section__fume-second .cb_wr2:nth-child(1) {
-  border-right: 1px solid white;
+  border-right: 1px solid #ffffff47;
 }
 @media only screen and (max-width: 62em) {
   main .section__fume-second .cb_wr2:nth-child(1) {
@@ -1814,10 +1814,10 @@ main .section__fume-second .cb_wr2:nth-child(1) {
   }
 }
 main .section__fume-second .cb_wr2-1:nth-child(1) {
-  border-right: 1px solid white;
+  border-right: 1px solid #ffffff47;
 }
 main .section__fume-second .cb_wr2-1:nth-child(3) {
-  border-top: 1px solid white;
+  border-top: 1px solid #ffffff47;
 }
 main .section__fume-second .cb_wr2 .content-border2 {
   text-align: center;

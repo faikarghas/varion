@@ -479,7 +479,7 @@ main{
         }
 
         .cb_wr{
-            border: 1px solid white;
+            border: 1px solid #ffffff47;
             @include respond(down-tab-port){
                 border-right: none;
                 border-left: none;
@@ -488,7 +488,7 @@ main{
                 border-right: none;
                 border-left: none;
                 @include respond(down-tab-port){
-                    border-right: 1px solid white;
+                    border-right: 1px solid #ffffff47;
                 }
             }
             &:nth-child(3){
@@ -515,17 +515,17 @@ main{
         }
 
         .cb_wr2{
-            border-top: 1px solid white;
-            border-bottom: 1px solid white;
+            border-top: 1px solid #ffffff47;
+            border-bottom: 1px solid #ffffff47;
             &:nth-child(1){
-                border-right: 1px solid white;
+                border-right: 1px solid #ffffff47;
                 @include respond(down-tab-port){
                     border-right: none;
                 }
             }
             &-1{
                 &:nth-child(1){
-                    border-right: 1px solid white;
+                    border-right: 1px solid #ffffff47;
                     @include respond(down-tab-port){
                     }
                 }
@@ -533,7 +533,7 @@ main{
 
                 }
                 &:nth-child(3){
-                    border-top: 1px solid white;
+                    border-top: 1px solid #ffffff47;
                 }
             }
             .content-border2{
