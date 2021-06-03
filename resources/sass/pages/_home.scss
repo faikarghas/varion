@@ -232,14 +232,7 @@ main{
                 padding-right: 20px;
             }
         }
-        .slick-slide{
-            div{
-                height: 100%;
-                li{
-                    height: 100%;
-                }
-            }
-        }
+        
     }
 
     .sectionHome__slider{
@@ -281,6 +274,14 @@ main{
                 height: 100%;
                 img{
                     object-fit: cover;
+                }
+            }
+        }
+        .slick-slide{
+            div{
+                height: 100%;
+                li{
+                    height: 100%;
                 }
             }
         }
