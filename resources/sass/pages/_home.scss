@@ -24,8 +24,19 @@ header{
             @include respond(down-tab-port){
                 height: 300px;
             }
+            &--desc{
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                display: inline-block;
+                width: 30%;
+                transform: translateY(-50%);
+                h1{
+                    color: white;
+                }
+            }
             .left-img{
-                width: 35%;
+                width: 65%;
                 // height: 340px;
                 img{
                     height: 100%;
@@ -33,7 +44,7 @@ header{
                 }
             }
             .right-img{
-                width: 65%;
+                width: 35%;
                 // height: 340px;
                 img{
                     height: 100%;

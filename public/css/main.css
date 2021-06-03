@@ -711,8 +711,19 @@ header .homeHeaderSlider-item {
     height: 300px;
   }
 }
+header .homeHeaderSlider-item--desc {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  display: inline-block;
+  width: 30%;
+  transform: translateY(-50%);
+}
+header .homeHeaderSlider-item--desc h1 {
+  color: white;
+}
 header .homeHeaderSlider-item .left-img {
-  width: 35%;
+  width: 65%;
 }
 header .homeHeaderSlider-item .left-img img {
   height: 100%;
@@ -720,7 +731,7 @@ header .homeHeaderSlider-item .left-img img {
      object-fit: cover;
 }
 header .homeHeaderSlider-item .right-img {
-  width: 65%;
+  width: 35%;
 }
 header .homeHeaderSlider-item .right-img img {
   height: 100%;

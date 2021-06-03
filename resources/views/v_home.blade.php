@@ -4,28 +4,17 @@
     @include('components/presentational/menu',['listMenu'=>$listMenu])
     <div class="slider__header" page="home">
         <ul class="homeHeaderSlider">
-            {{-- @foreach ($slider as $item)
-                <li style="background-image: url('https://source.unsplash.com/random/1255x500')">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-4">
-                                <div class="slider__header-desc forDesktop">
-                                    <h1>{{$item->description}}</h1>
-                                    <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
-                                </div>
-                            </div>
+            @foreach ($slider as $item)
+                <li class="homeHeaderSlider-item">
+                    <div class="left-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%">
+                        <div class="homeHeaderSlider-item--desc forDesktop">
+                            <h1>{{$item->description}}</h1>
+                            <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
                         </div>
                     </div>
+                    <div class="right-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
                 </li>
-            @endforeach --}}
-            <li class="homeHeaderSlider-item">
-                <div class="left-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
-                <div class="right-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%"></div>
-            </li>
-            <li class="homeHeaderSlider-item">
-                <div class="left-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%"></div>
-                <div class="right-img"><img src="{{asset('images/home1.jpg')}}" alt="fume-img1" width="100%"></div>
-            </li>
+            @endforeach
         </ul>
     </div>
     <div class="bg-headerHome"></div>
