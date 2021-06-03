@@ -721,6 +721,10 @@ header .homeHeaderSlider-item--desc {
 }
 header .homeHeaderSlider-item--desc h1 {
   color: white;
+  font-size: 4.5rem;
+  font-weight: 800;
+  padding-bottom: 2rem;
+  line-height: 1em;
 }
 header .homeHeaderSlider-item .left-img {
   width: 65%;
