@@ -73,12 +73,12 @@
                     <div class="row g-lg-0" style="height: 100%;">
                         <div class="col-6 cb_wr2-1">
                             <div class="content-border2">
-                                <img src="{{asset('images/fume-map.png')}}" alt="fume cup" >
+                                <img src="{{asset('images/fume-map.png')}}" width="80%" alt="fume cup" >
                             </div>
                         </div>
                         <div class="col-6 cb_wr2-1">
                             <div class="content-border2">
-                                <img src="{{asset('images/fume-roasting.png')}}" alt="fume cup" >
+                                <img src="{{asset('images/fume-roasting.png')}}" width="80%" alt="fume cup" >
                             </div>
                         </div>
                         <div class="col-lg-12 cb_wr2-1">
