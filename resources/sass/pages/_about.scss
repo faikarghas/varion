@@ -184,8 +184,8 @@ main{
         }
         .hr{
             width: 100%;
-            height: 2px;
-            background-color: black;
+            height: 1px;
+            background-color: #d0d0d0;
             margin-bottom: 2rem;
         }
     }
@@ -205,6 +205,9 @@ main{
                     list-style: none;
                     display: inline-block;
                     margin-right: 1.5rem;
+                    img{
+                        width: 200px;
+                    }
                 }
             }
         }
