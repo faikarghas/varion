@@ -54,12 +54,12 @@
                                 <div>
                                     <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
                                 </div>
-                                <div>
+                                {{-- <div>
                                     <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
                                 </div>
                                 <div>
                                     <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
-                                </div>
+                                </div> --}}
                             </div>
                             <ul class="fume_cb2_arrow">
                                 <li class="fume_prev1">prev</li>

@@ -1855,7 +1855,7 @@ main .section__fume-second .cb_wr2 .content-border2 p {
 main .section__fume-second .cb_wr2 .content-border2--sliderWrapper {
   overflow: hidden;
   position: relative;
-  height: 225px;
+  height: 350px;
 }
 main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb2, main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb3 {
   width: 300px;
@@ -1865,7 +1865,7 @@ main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb2 div
   text-align: center;
 }
 main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb2 div img, main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb3 div img {
-  height: 200px;
+  height: 250px;
 }
 main .section__fume-second .cb_wr2 .content-border2--sliderWrapper .fume_cb2_arrow {
   padding: 0;
