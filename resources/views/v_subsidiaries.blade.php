@@ -77,7 +77,7 @@
                                 <img src="{{asset('images')}}/{{$imageInvestment}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">INVESTMENT</h3>
+                                <h3 class="mb-4">PLANTATION</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
@@ -86,7 +86,7 @@
                                 <img src="{{asset('images')}}/{{$imageBusiness}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">BUSINESS DEVELOPMENT</h3>
+                                <h3 class="mb-4">PROCESSING</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                 <img src="{{asset('images')}}/{{$imageCapital}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                <h3 class="mb-4">CAPITAL MANAGEMENT</h3>
+                                <h3 class="mb-4">TRADING</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
