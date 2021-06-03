@@ -110,7 +110,7 @@
                         <div class="content-border--sliderWrapper">
                             <div class="fume_cb3">
                                 <div>
-                                    <img src="{{asset('images/fume-roasting.png')}}" alt="fume cup" width="100%">
+                                    <img src="{{asset('images/fume-kitchen1.png')}}" alt="fume cup" width="100%">
                                 </div>
                                 {{-- <div>
                                     <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
