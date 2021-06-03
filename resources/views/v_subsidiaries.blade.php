@@ -144,7 +144,7 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner__subsidiaries-desc">
-                                        <h2 class="mb-4">WILL BE ON THEM<br> MARKET IN 2022</h2>
+                                        <h2 class="mb-4">WILL BE ON THE<br> MARKET IN 2022</h2>
                                         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
                                             diam nonummy nibh euismod tincidunt ut laoreet dolore
                                             magna aliquam erat volutpat. Ut wisi enim ad minim

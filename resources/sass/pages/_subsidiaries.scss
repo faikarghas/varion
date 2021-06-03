@@ -517,6 +517,8 @@ main{
         .cb_wr2{
             border-top: 1px solid #ffffff47;
             border-bottom: 1px solid #ffffff47;
+            display: flex;
+            align-items: center;
             &:nth-child(1){
                 border-right: 1px solid #ffffff47;
                 @include respond(down-tab-port){
@@ -524,17 +526,21 @@ main{
                 }
             }
             &-1{
-                height: 50%;
+                display: flex;
+                align-items: center;
                 &:nth-child(1){
+                    height: 65%;
                     border-right: 1px solid #ffffff47;
                     @include respond(down-tab-port){
                     }
                 }
                 &:nth-child(2){
-
+                    height: 65%;
+                    align-items: center;
                 }
                 &:nth-child(3){
                     border-top: 1px solid #ffffff47;
+                    height: 35%;
                 }
             }
             .content-border2{
@@ -572,7 +578,7 @@ main{
                         div{
                             text-align: center;
                             img{
-                                height: 250px;
+                                height: 227px;
                             }
                         }
                     }
@@ -594,7 +600,7 @@ main{
         }
 
         .cb_wr3{
-            border: 1px solid white;
+            border: 1px solid #ffffff47;
             &:nth-child(1){
                 border-right: none;
                 border-left: none;
@@ -623,21 +629,19 @@ main{
                 &--sliderWrapper{
                     overflow: hidden;
                     position: relative;
-                    height: 200px;
                     @include respond(down-tab-port){
                         height: unset;
                         width: 100%;
                     }
                     .fume_cb2,.fume_cb3{
                         width: 300px;
-                        margin-bottom: 2rem;
                         @include respond(down-tab-port){
                             width: unset;
                         }
                         div{
                             text-align: center;
                             img{
-                                height: 200px;
+                                height: 227px;
                                 @include respond(down-tab-port){
                                     height: 100px;
                                 }
