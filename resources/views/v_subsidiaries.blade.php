@@ -2,7 +2,7 @@
 @section('content')
 <div class="h_aks1"></div>
         <header class="position-relative">
-            <menu class="menu__home">
+            {{-- <menu class="menu__home">
                 @include('components/presentational/menuMobile')
                 <div class="menu__home-logo"><a href="{{url('/')}}"><img src="{{asset('/images/logo_black.png')}}" alt="" srcset=""  height="40px"></a></div>
                 <div class="menu__home-link forDesktop-dflex">
@@ -34,7 +34,8 @@
                         </li>
                     </ul>
                 </div>
-            </menu>
+            </menu> --}}
+            @include('components/presentational/menu',['listMenu'=>$listMenu])
             <div class="slider__header">
                 <ul class="aboutHeaderSlider">
                     <li class="aboutHeaderSlider-item">
