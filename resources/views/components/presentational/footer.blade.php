@@ -14,10 +14,10 @@
                     <li><a href=""><img src="{{asset('images/facebook.svg')}}" width="25px" alt=""></a></li>
                 </ul>
                 <ul>
-                    <li><a href="">SITEMAP</a></li>
-                    <li><a href="">KEBIJAKAN SITUS</a></li>
-                    <li><a href="">SYARAT PENGGUNA</a></li>
-                    <li><a href="">PRIVASI</a></li>
+                    <li><a href="{{route('sitemap')}}">SITEMAP</a></li>
+                    <li><a href="{{route('kebijakan-situs')}}">KEBIJAKAN SITUS</a></li>
+                    <li><a href="{{route('syarat-pengguna')}}">SYARAT PENGGUNA</a></li>
+                    <li><a href="{{route('privasi')}}">PRIVASI</a></li>
                 </ul>
             </div>
             <div class="col-12 col-lg-6 d-flex footer_copyright">

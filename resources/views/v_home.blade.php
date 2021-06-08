@@ -37,7 +37,7 @@
                                 <h4>{{$item->name}}</h4>
                                 <h3 class="text-dark">{{$item->titleHome}}</h3>
                                 <p class="sectionHome__subsidiaries-desc">{{$item->shortDescriptionHome}}</p>
-                                <div class="learn__button-dark"><a href="{{route('home')}}">LEARN MORE</a></div>
+                                <div class="learn__button-dark"><a href="{{url($item->slug)}}">LEARN MORE</a></div>
                             </div>
                         @endforeach
                     </div>
