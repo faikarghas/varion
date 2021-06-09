@@ -82,10 +82,12 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PLANTATION</h3>
+                                @elseif($slug ===  'pt-varion-agritech-indonesia')
+                                    <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
+                                    <p>This is where our innovations and future breakthroughs are born. We strive to put consistent research and development as a top priority in order to keep serving people the best of our products and services. </p>
                                 @else
                                     <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
                                 @endif
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 mb-5">
@@ -95,10 +97,12 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PROCESSING</h3>
+                                @elseif($slug ===  'pt-varion-agritech-indonesia')
+                                    <h3 class="mb-4">STRAWBERRY FARMING</h3>
+                                    <p>Strawberry production in Japan is mostly done in greenhouses due to the uncertain temperatures, water, and conditions. Bringing those strawberries to tropical land like Indonesia has become the better decision since the humidity stays in control. </p>
                                 @else
                                     <h3 class="mb-4">FARMING</h3>
                                 @endif
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
                         <div class="col-12 col-lg-4 mb-5">
@@ -108,10 +112,12 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">TRADING</h3>
+                                @elseif($slug ===  'pt-varion-agritech-indonesia')
+                                    <h3 class="mb-4">DISTRIBUTION</h3>
+                                    <p>Strawberries are widely consumed as the fruit itself, jams, beverages, and other food flavorings. In the market, strawberry fruits are among the fancy fruits that many people often dig in because of the taste and health benefits. </p>
                                 @else
                                     <h3 class="mb-4">DISTRIBUTION</h3>
                                 @endif
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.</p>
                             </div>
                         </div>
                     </div>
@@ -144,12 +150,10 @@
                             <div class="row">
                                 <div class="col-12">
                                     <div class="banner__subsidiaries-desc">
-                                        <h2 class="mb-4">WILL BE ON THE<br> MARKET IN 2022</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                                            diam nonummy nibh euismod tincidunt ut laoreet dolore
-                                            magna aliquam erat volutpat. Ut wisi enim ad minim
-                                            veniam, quis nostrud exerci tation ullamcorper suscipit
-                                            loborti.</p>
+                                        @if($slug ===  'pt-varion-agritech-indonesia')
+                                            <h2 class="mb-4">WILL BE ON THE<br> MARKET IN 2022</h2>
+                                            <p>It is with great pleasure to announce to you that our finest strawberries are coming to your nearest supermarket soon.</p>
+                                        @endif
                                     </div>
                                 </div>
                             </div>

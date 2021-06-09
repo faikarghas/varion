@@ -136,7 +136,6 @@ $('.open_menu').on('click',function (params) {
     $('#menu-hamburger span').toggleClass('bg-white')
     $('.menu__mobileOverlay').toggleClass('open')
     $('.menu__mobile').toggleClass('open')
-
 })
 
 // ============================================== //
