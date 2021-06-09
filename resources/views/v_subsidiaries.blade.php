@@ -82,6 +82,7 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PLANTATION</h3>
+                                    <p>Generally planted in large beds in shaded nurseries, coffee seeds will be watered frequently and shaded from the bright sunlight until they show heartiness in order for them to be permanently planted. Often, planting takes place during the rainy season as they need the moist soil to be firmly growing.</p>
                                 @elseif($slug ===  'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
                                     <p>This is where our innovations and future breakthroughs are born. We strive to put consistent research and development as a top priority in order to keep serving people the best of our products and services. </p>
@@ -97,6 +98,7 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PROCESSING</h3>
+                                    <p>After the coffee-picking, processing must begin immediately before the fruits become spoiled. In the processing step, the coffee bean is done in two famous ways depending on the weather, which are dry and wet methods.   </p>
                                 @elseif($slug ===  'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">STRAWBERRY FARMING</h3>
                                     <p>Strawberry production in Japan is mostly done in greenhouses due to the uncertain temperatures, water, and conditions. Bringing those strawberries to tropical land like Indonesia has become the better decision since the humidity stays in control. </p>
@@ -112,6 +114,7 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">TRADING</h3>
+                                    <p>Being the second most commonly traded commodity in the world with more than 2.25 billion cups consumed daily, coffee trails only as a source of foreign exchange to developing countries. </p>
                                 @elseif($slug ===  'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">DISTRIBUTION</h3>
                                     <p>Strawberries are widely consumed as the fruit itself, jams, beverages, and other food flavorings. In the market, strawberry fruits are among the fancy fruits that many people often dig in because of the taste and health benefits. </p>
