@@ -1,4 +1,7 @@
 header{
+    @include respond(down-tab-port){
+        margin-top:150px;
+    }
     .about__header{
         margin-top: 200px;
         @include respond(down-tab-port){
@@ -160,7 +163,7 @@ main{
         padding: 2rem 0 0rem 0;
         position: relative;
         @include respond(down-tab-port){
-            padding: 4rem 4rem;
+            padding: 0;
         }
         .img__wrapper{
             height: 250px;
@@ -205,8 +208,13 @@ main{
                     list-style: none;
                     display: inline-block;
                     margin-right: 1.5rem;
+                    @include respond(down-tab-port){
+                    }
                     img{
                         width: 200px;
+                        @include respond(down-tab-port){
+                            width: 100px;
+                        }
                     }
                 }
             }

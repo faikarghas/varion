@@ -1889,6 +1889,18 @@ $('.homeSectionSlider').slick({
     }
   }]
 });
+
+if ($(window).width() <= 992) {
+  $('.subSlider').slick({
+    arrows: false,
+    dots: false,
+    centerMode: true,
+    adaptiveHeight: true,
+    slidesToShow: 1,
+    slidesToScroll: 1
+  });
+}
+
 $('.slider-for').slick({
   slidesToShow: 1,
   slidesToScroll: 1,

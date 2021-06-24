@@ -40,14 +40,27 @@
                 <ul class="aboutHeaderSlider">
                     <li class="aboutHeaderSlider-item">
                         <div class="left-img"><img src="{{asset('images')}}/{{$imageHeader1}}" alt="fume-img1" width="100%">
-                            <div class="desc"><h4>{!!$titleHeader!!}</h4></div>
+                            <div class="desc forDesktop"><h4>{!!$titleHeader!!}</h4></div>
                         </div>
                         {{-- <div class="right-img"><img src="{{asset('images')}}/{{$imageHeader2}}" alt="fume-img1" width="100%"></div> --}}
+                        <div class="aboutHeaderSlider-item--desc forMobile">
+                            <div class="container-fluid g-0">
+                                <div class="row g-0">
+                                    <div class="col-6 pt-5 pb-5">
+                                        <h4>{!!$titleHeader!!}</h4>
+                                    </div>
+                                    <div class="col-6"></div>
+                                    <div class="col-6">
+                                        <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
             <div class="bg-headerAbout"></div>
-            <div class="bg-headerAbout2"></div>
+            <div class="bg-headerAbout2 forDesktop"></div>
             <div class="h_aks2"></div>
         </header>
         <main>
@@ -55,17 +68,27 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-                            <h4>{{$name}}</h4>
+                            <h4 class="forDesktop">{{$name}}</h4>
                         </div>
-                        <div class="col-12 col-lg-7">
+                        <div class="col-12 col-lg-7 ps-0">
                             <div class="img__wrapper">
                                 <div class="img__wrapper-front"><img src="{{asset('images')}}/{{$imageFront}}" width="100%" height="100%" alt=""></div>
                                 <div class="img__wrapper-back"><img src="{{asset('images')}}/{{$imageBack}}" width="100%" height="100%"     alt=""></div>
                             </div>
                         </div>
-                        <div class="col-12 col-lg-5">
-                            <h3>{{$title}}</h3>
-                            {!! $description !!}
+                        <div class="col-12 col-lg-5 ps-0">
+                            <div class="forDesktop">
+                                <h3>{{$title}}</h3>
+                                {!! $description !!}
+                            </div>
+                            <div class="row g-0 forMobile-dflex">
+                                <div class="col-6 p-5" style="background-color: #F4F4F5">
+                                    <h3>{{$title}}</h3>
+                                </div>
+                                <div class="col-6 p-5">
+                                    {!! $description !!}
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,16 +97,16 @@
             </section>
             <section class="section__subsidiaries-second">
                 <div class="container">
-                    <div class="row">
+                    <div class="row subSlider">
                         <div class="col-12 col-lg-4 mb-5">
                             <div class="img__wrapper">
                                 <img src="{{asset('images')}}/{{$imageInvestment}}" width="100%" height="100%" alt="">
                             </div>
                             <div class="desc__wrapper">
-                                @if ($slug ===  'pt-varion-sukses-makmur')
+                                @if ($slug === 'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PLANTATION</h3>
                                     <p>Generally planted in large beds in shaded nurseries, coffee seeds will be watered frequently and shaded from the bright sunlight until they show heartiness in order for them to be permanently planted. Often, planting takes place during the rainy season as they need the moist soil to be firmly growing.</p>
-                                @elseif($slug ===  'pt-varion-agritech-indonesia')
+                                @elseif($slug === 'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
                                     <p>This is where our innovations and future breakthroughs are born. We strive to put consistent research and development as a top priority in order to keep serving people the best of our products and services. </p>
                                 @else
@@ -131,12 +154,26 @@
                 @if ($imageFooterType === 1)
                     <div class="banner_wrapper">
                         <div class="banner_wrapper-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
-                            <div class="desc">{!!$imageFooterDesc!!}</div>
+                            <div class="desc forDesktop">{!!$imageFooterDesc!!}</div>
+                            <img src="http://127.0.0.1:3020/images/Varionsuksesmakmur-b1.jpg" class="img-fluid forMobile" alt="">
                         </div>
-                        <div class="banner_wrapper-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
+                        <div class="banner_wrapper-leftM forMobile">
+                            <div class="desc p-5">{!!$imageFooterDesc!!}</div>
+                        </div>
+                        <div class="banner_wrapper-right forDesktop" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
                             <div class="desc">{!!$imageFooter2Desc!!}</div>
                             <div class="btn-readMore">
                                 <a href="">READ MORE</a>
+                            </div>
+                        </div>
+                        <div class="container forMobile">
+                            <div class="row">
+                                <div class=" col-7 banner_wrapper-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
+                                    <div class="desc">{!!$imageFooter2Desc!!}</div>
+                                    <div class="btn-readMore">
+                                        <a href="">READ MORE</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

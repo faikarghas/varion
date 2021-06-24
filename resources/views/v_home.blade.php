@@ -11,10 +11,26 @@
                             <h1>{!!$item->description!!}</h1>
                             <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
                         </div>
+                        <div class="logo_varion forMobile">
+                            <img class="" src="{{asset('images/varion_logo_white.png')}}" alt="">
+                        </div>
                     </div>
                     <div class="right-img"><img src="{{asset('images/home2.jpg')}}" alt="fume-img1" width="100%">
-                        <div class="logo_varion">
+                        <div class="logo_varion forDesktop">
                             <img class="" src="{{asset('images/varion_logo_white.png')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="homeHeaderSlider-item--desc forMobile">
+                        <div class="container-fluid g-0">
+                            <div class="row g-0">
+                                <div class="col-6 pt-5 pb-5">
+                                    <h1>{!!$item->description!!}</h1>
+                                </div>
+                                <div class="col-6"></div>
+                                <div class="col-6">
+                                    <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -57,7 +73,7 @@
             </div>
         </div>
         <div class="bg-sliderSub"></div>
-        <div class="bg-sliderSub2"></div>
+        <div class="bg-sliderSub2 forDesktop"></div>
     </section>
     <section class="sectionHome__slider">
         <ul class="homeSectionSlider">

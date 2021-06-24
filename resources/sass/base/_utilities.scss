@@ -19,6 +19,14 @@
     }
 }
 
+.forMobile-dflex{
+    display: none !important;
+    @include respond(down-tab-port){
+        display: flex !important;
+    }
+}
+
+
 /* hamburger menu */
 
 #menu-hamburger {

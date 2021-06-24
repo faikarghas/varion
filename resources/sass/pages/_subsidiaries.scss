@@ -17,6 +17,9 @@ header{
         top: 0;
         background-color: $color_lightGrey;
         z-index: -1;
+        @include respond(down-tab-port){
+            height: 50%;
+        }
     }
 
     .bg-headerAbout2{
@@ -41,7 +44,9 @@ header{
             align-items: flex-end;
             padding-bottom: 2rem;
             @include respond(down-tab-port){
+                flex-direction: column;
                 align-items: center;
+                height: 440px;
             }
             .left-img{
                 width: 100%;
@@ -58,6 +63,40 @@ header{
                         color: white;
                         font-weight: 800;
                         font-size: 2.5rem;
+                    }
+                }
+            }
+            &--desc{
+                position: absolute;
+                top: 50%;
+                left: 10%;
+                display: inline-block;
+                width: 45%;
+                transform: translateY(-50%);
+                @include respond(down-tab-port){
+                    position: static;
+                    transform: none;
+                    width: 100%;
+                }
+                .learn__button{
+                    background-color: #819691;
+                    a{
+                        color: white;
+                    }
+                }
+                h4{
+                    @include respond(down-tab-port){
+                        color: black;
+                        font-weight: 800;
+                        font-size: 2.5rem;
+                        position: relative;
+                        padding-bottom: 0rem;
+                        margin-bottom: 0;
+                    }
+                }
+                .col-6{
+                    &:nth-child(2){
+                        background-color: $color_lightGrey;
                     }
                 }
             }
@@ -98,8 +137,21 @@ main{
         position: relative;
         min-height: 50rem;
         height: 50rem;
+        .ps-0{
+            padding: 0;
+        }
         @include respond(down-tab-port){
-            padding: 4rem 4rem;
+            padding: 0;
+            min-height: unset;
+            height: unset;
+            .container{
+                padding: 0;
+                margin: 0;
+                .row{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
         }
         h4{
             font-size: 1.8rem;
@@ -117,8 +169,9 @@ main{
             width: 100%;
             height: 100%;
             @include respond(down-tab-port){
-                height: 350px;
-                margin-top: 4rem;
+                display: flex;
+                flex-direction: row;
+                height: 250px;
             }
             &-front{
                 width: 40%;
@@ -128,9 +181,9 @@ main{
                 bottom: -122%;
                 z-index: 2;
                 @include respond(down-tab-port){
-                    left: 105px;
-                    bottom: 77px;
                     width: 60%;
+                    height: 100%;
+                    position: static;
                 }
                 img{
                     object-fit: cover;
@@ -143,8 +196,9 @@ main{
                 top: 0;
                 left: 0;
                 @include respond(down-tab-port){
-                    top: 0;
-                    left: 0;
+                    width: 40%;
+                    height: 100%;
+                    position: static;
                 }
                 img{
                     object-fit: cover;
@@ -159,6 +213,9 @@ main{
             top: 0;
             background-color: $color_lightGrey;
             z-index: -1;
+            @include respond(down-tab-port){
+                display: none;
+            }
         }
         .bg-mainSubsiFirst2{
             position: absolute;
@@ -168,13 +225,27 @@ main{
             bottom: 0;
             background-color: $color_lightGrey;
             z-index: -1;
+            @include respond(down-tab-port){
+                display: none;
+            }
         }
     }
     .section__subsidiaries-second{
         padding: 2rem 0 0rem 0;
         position: relative;
         @include respond(down-tab-port){
-            padding: 4rem 4rem;
+            padding: 0;
+            .container{
+                padding: 0;
+                margin: 0;
+                .row{
+                    padding: 0;
+                    margin: 0;
+                    .col-12{
+                        padding: 0;
+                    }
+                }
+            }
         }
         .img__wrapper{
             height: 250px;
@@ -208,6 +279,7 @@ main{
             background-size: cover;
             @include respond(down-tab-port){
                 padding: 0 4rem;
+
             }
             &-desc{
                 width: 400px;
@@ -235,6 +307,8 @@ main{
                 flex-wrap: wrap;
                 height: unset;
                 width: 100%;
+                flex-direction: row-reverse;
+
             }
             &-left{
                 width: 55%;
@@ -244,9 +318,11 @@ main{
                 background-repeat: no-repeat;
                 padding: 7rem;
                 @include respond(down-tab-port){
-                    width: 100%;
-                    padding: 5rem 4rem;
+                    width: 35%;
+                    height: 300px;
+                    padding: 0;
                     justify-content: flex-start;
+                    background-image: none !important;
                 }
                 img{
                     object-fit: cover;
@@ -266,6 +342,9 @@ main{
                     }
                 }
             }
+            &-leftM{
+                width: 65%;
+            }
             &-right{
                 width: 45%;
                 height: 100%;
@@ -276,7 +355,7 @@ main{
                 display: flex;
                 align-items: center;
                 @include respond(down-tab-port){
-                    width: 100%;
+                    width: 70%;
                     padding: 5rem 4rem;
                     flex-direction: column;
                     align-items: flex-start;
@@ -302,6 +381,9 @@ main{
                         font-size: 2.5rem;
                         font-weight: 900;
                         margin: 0;
+                        @include respond(down-tab-port){
+                            font-size: 1.6rem;
+                        }
                     }
                 }
                 .btn-readMore{
@@ -315,8 +397,12 @@ main{
                     box-shadow: 3px 3px 5px 0px rgba(143,143,143,0.75);
                     @include respond(down-tab-port){
                         transform: none;
-                        position: static;
+                        position: absolute;
+                        right: -80px;
+                        top: 50%;
+                        transform: translateY(-50%);
                         height: 50px;
+                        width: 120px;
                     }
                     a{
                         display: block;

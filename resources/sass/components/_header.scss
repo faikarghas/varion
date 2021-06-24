@@ -5,7 +5,8 @@ header{
         margin-top: 110px;
         @include respond(down-tab-port){
             width: 100%;
-            padding: 0 4.75rem;
+            padding-left: 4.75rem;
+            padding-right: 0;
         }
     }
 

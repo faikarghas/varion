@@ -1,6 +1,9 @@
 // 37%
 
 header{
+    @include respond(down-tab-port){
+        padding-bottom: 5rem;
+    }
     .bg-headerHome{
         position: absolute;
         width: 37%;
@@ -25,7 +28,9 @@ header{
             position: relative;
             align-items: center;
             @include respond(down-tab-port){
-                height: 300px;
+                flex-direction: column;
+                align-items: flex-start;
+                height: unset;
             }
             &--desc{
                 position: absolute;
@@ -34,25 +39,70 @@ header{
                 display: inline-block;
                 width: 45%;
                 transform: translateY(-50%);
+                @include respond(down-tab-port){
+                    position: static;
+                    transform: none;
+                    width: 100%;
+                }
+                .learn__button{
+                    background-color: #819691;
+                    a{
+                        color: white;
+                    }
+                }
                 h1{
                     color: white;
                     font-size: 4.5rem;
                     font-weight: 800;
                     padding-bottom: 2rem;
                     line-height: 1em;
+                    @include respond(down-tab-port){
+                        color: black;
+                        font-size: 2.5rem;
+                        position: relative;
+                        padding-bottom: 0rem;
+                        margin-bottom: 0;
+                    }
+                }
+                .col-6{
+                    &:nth-child(2){
+                        background-color: $color_lightGrey;
+                    }
                 }
             }
             .left-img{
                 width: 69%;
                 position: relative;
+                @include respond(down-tab-port){
+                    width: 100%;
+                    height:220px;
+                }
                 img{
                     height: 100%;
                     object-fit: cover;
+                }
+
+                .logo_varion{
+                    @include respond(down-tab-port){
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 70%;
+                    }
+                    img{
+                        object-fit: contain;
+                        width: 100%;
+                    }
                 }
             }
             .right-img{
                 width: 33%;
                 position: relative;
+                @include respond(down-tab-port){
+                    width: 100%;
+                    height: 100px;
+                }
                 img{
                     height: 100%;
                     object-fit: cover;
@@ -157,9 +207,12 @@ main{
             width: 30%;
             height: 100%;
             left: 0;
-            top: 0;
+            top: 100px;
             background-color: $color_lightGrey;
             z-index: -1;
+            @include respond(down-tab-port){
+                width: 40%;
+            }
         }
         .bg-sliderSub2{
             position: absolute;
@@ -194,6 +247,9 @@ main{
             display: grid;
             @include respond(down-tab-port){
                 transform: unset;
+            }
+            &-total{
+                color: gray !important;
             }
             p{
                 font-size: 2rem;
@@ -232,7 +288,6 @@ main{
                 padding-right: 20px;
             }
         }
-        
     }
 
     .sectionHome__slider{

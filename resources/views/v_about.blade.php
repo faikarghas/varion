@@ -4,7 +4,7 @@
 <header class="position-relative">
     @include('components/presentational/menu',['listMenu'=>$listMenu])
 
-    <div class="container about__header">
+    <div class="container about__header forDesktop">
         <div class="row">
             <div class="col-12 mb-5">
                 <h1>WHEN GROWTH BECOMES<br/>OUR PASSION</h1>
@@ -19,9 +19,23 @@
                     <div class="left-img"><img src="{{asset('images/VarionCapitalManag-2.jpg')}}" alt="fume-img1" width="100%"></div>
                     <div class="right-img"><img src="{{asset('images/VarionCapitalManag-2-2.jpg')}}" alt="fume-img1" width="100%"></div>
                 </li>
+                <div class="homeHeaderSlider-item--desc forMobile">
+                    <div class="container-fluid g-0">
+                        <div class="row g-0">
+                            <div class="col-6 pt-5 pb-5">
+                                <h1>WHEN GROWTH BECOMES<br/>OUR PASSION</h1>
+                            </div>
+                            <div class="col-6"></div>
+                            <div class="col-6">
+                                <div class="learn__button"><a href="{{route('home')}}">LEARN MORE</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             @endforeach
         </ul>
     </div>
+    
     <div class="bg-headerAbout"></div>
     <div class="bg-headerAbout2"></div>
     <div class="h_aks2"></div>
@@ -48,8 +62,7 @@
     </section>
     <section class="section__about-second">
         <div class="container">
-            <div class="row">
-                <div class="col-12"><div class="hr"></div></div>
+            <div class="row subSlider">
                 <div class="col-12 col-lg-4 mb-5">
                     <div class="img__wrapper">
                         <img src="{{asset('images/VarionCapitalManag-11.jpg')}}" width="100%" height="100%" alt="">
@@ -77,7 +90,6 @@
                         <p>{{$capital}}</p>
                     </div>
                 </div>
-                <div class="col-12"><div class="hr mb-0"></div></div>
             </div>
         </div>
         <div class="bg-mainAboutSecond"></div>
