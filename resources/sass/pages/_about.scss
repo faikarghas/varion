@@ -1,7 +1,5 @@
 header{
-    @include respond(down-tab-port){
-        margin-top:150px;
-    }
+    
     .about__header{
         margin-top: 200px;
         @include respond(down-tab-port){

@@ -1066,11 +1066,6 @@ main .sectionHome__slider .slick-slide div li {
   height: 100%;
 }
 
-@media only screen and (max-width: 62em) {
-  header {
-    margin-top: 150px;
-  }
-}
 header .about__header {
   margin-top: 200px;
 }
@@ -2369,8 +2364,24 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
 .section__career-third {
   padding: 10rem 0;
 }
+@media only screen and (max-width: 62em) {
+  .section__career-third {
+    padding: 5rem 0;
+  }
+}
+.section__career-third .opcareer {
+  padding: 0 40px;
+}
+.section__career-third .opcareer h2 {
+  text-align: start;
+}
 .section__career-third .mb-5r {
   margin-bottom: 5rem;
+}
+@media only screen and (max-width: 62em) {
+  .section__career-third .mb-5r {
+    margin: 0;
+  }
 }
 .section__career-third h2 {
   font-weight: 900;
@@ -2380,6 +2391,11 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
 .section__career-third .list__career {
   padding: 2rem 0;
   padding-left: 5rem;
+}
+@media only screen and (max-width: 62em) {
+  .section__career-third .list__career {
+    text-align: center;
+  }
 }
 .section__career-third .list__career:not(:last-child) {
   border-bottom: 2px solid black;
@@ -2392,6 +2408,14 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
 @media only screen and (max-width: 62em) {
   .section__career-third .list__career-desc, .section__career-third .list__career-status {
     margin-bottom: 2rem;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+}
+@media only screen and (max-width: 62em) {
+  .section__career-third .list__career-join {
+    align-items: center !important;
+    justify-content: center !important;
   }
 }
 .section__career-third .list__career h4 {
@@ -2415,6 +2439,11 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
   width: 150px;
   border-radius: 15px;
 }
+@media only screen and (max-width: 62em) {
+  .section__career-third .list__career .btn-join {
+    margin-bottom: 2rem;
+  }
+}
 
 .section__contact-first {
   background-color: #F4F4F5;
@@ -2424,6 +2453,7 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
 @media only screen and (max-width: 62em) {
   .section__contact-first {
     padding: 4rem;
+    margin-top: 60px;
   }
 }
 .section__contact-first h3 {
@@ -2461,6 +2491,11 @@ main .section__fume-third .banner_wrapper-right .btn-readMore a {
   display: -ms-flexbox;
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 62em) {
+  .section__contact-first-r {
+    margin-top: 50px !important;
+  }
 }
 .section__contact-first-r p {
   color: black;

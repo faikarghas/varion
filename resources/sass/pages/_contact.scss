@@ -4,6 +4,7 @@
     padding: 8rem 20rem;
     @include respond(down-tab-port){
         padding: 4rem;
+        margin-top: 60px;
     }
     h3{
         font-size: 3rem;
@@ -35,6 +36,9 @@
         justify-content: space-between;
         display: flex;
         flex-direction: column;
+        @include respond(down-tab-port){
+            margin-top: 50px !important;
+        }
         p{
             color: black;
         }

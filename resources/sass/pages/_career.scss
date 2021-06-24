@@ -60,8 +60,20 @@
 
 .section__career-third{
     padding: 10rem 0;
+    @include respond(down-tab-port){
+        padding: 5rem 0;
+    }
+    .opcareer{
+        padding: 0 40px;
+        h2{
+            text-align: start;
+        }
+    }
     .mb-5r{
         margin-bottom: 5rem;
+        @include respond(down-tab-port){
+            margin: 0;
+        }
     }
     h2{
         font-weight: 900;
@@ -70,6 +82,9 @@
     }
 
     .list__career{
+        @include respond(down-tab-port){
+            text-align: center;
+        }
         &:not(:last-child){
             border-bottom: 2px solid black;
         }
@@ -81,6 +96,14 @@
         &-desc,&-status{
             @include respond(down-tab-port){
                 margin-bottom: 2rem;
+                align-items: center !important;
+                justify-content: center !important;
+            }
+        }
+        &-join{
+            @include respond(down-tab-port){
+                align-items: center !important;
+                justify-content: center !important;
             }
         }
         h4{
@@ -103,6 +126,10 @@
         .btn-join{
             width: 150px;
             border-radius: 15px;
+            @include respond(down-tab-port){
+                margin-bottom: 2rem;
+               
+            }
         }
     }
 

@@ -8,7 +8,7 @@
     <section class="section__contact-first">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-6 section__contact-first-l">
+                <div class="col-6 col-lg-6 section__contact-first-l">
                     <h3>OFFICE</h3>
                     <ul class="contact__wrapper-r-info">
                         <li class="mb-4"><p>{{$address}}</p></li>
@@ -17,9 +17,12 @@
                         <li><p>{{$email}}</p></li>
                         <img class="loc_img forDesktop" src="{{asset('images/office.svg')}}" width="25px" height="25px" alt="">
                     </ul>
+                    <img class="mail-logo forDesktop" src="{{asset('images/contact.svg')}}" width="150px" alt="">
+                </div>
+                <div  class="col-6 col-lg-6 forMobile d-flex justify-content-center align-item-center">
                     <img class="mail-logo" src="{{asset('images/contact.svg')}}" width="150px" alt="">
                 </div>
-                <div class="col-12 col-lg-6 section__contact-first-r">
+                <div class="col-12 col-lg-6 section__contact-first-r ">
                     <div>
                         <h3>CONTACT US</h3>
                         <p>{{$description}}</p>
