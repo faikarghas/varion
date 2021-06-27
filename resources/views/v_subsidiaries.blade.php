@@ -178,11 +178,22 @@
                         </div>
                     </div>
                 @elseif ($imageFooterType === 2)
-                <div class="banner_wrapper2">
+                <div class="banner_wrapper2 forDesktop-dflex">
                     <div class="banner_wrapper2-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
                         <div class="desc">{!!$imageFooterDesc!!}</div>
                     </div>
                     <div class="banner_wrapper2-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')"></div>
+                </div>
+                <div class="banner_wrapper2M forMobile">
+                    <div class="row g-0">
+                        <div class="col-6 banner_wrapper2M-img">
+                            <img width="100%" src="{{asset('images')}}/{{$imageFooter}}" alt="">
+                            <img width="100%" src="{{asset('images')}}/{{$imageFooter2}}" alt="">
+                        </div>
+                        <div class="col-6 banner_wrapper2M-desc">
+                            <div class="desc">{!!$imageFooterDesc!!}</div>
+                        </div>
+                    </div>
                 </div>
                 @else
                     <div class="banner__subsidiaries" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">

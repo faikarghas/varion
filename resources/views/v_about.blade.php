@@ -11,7 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="slider__header m-0">
+    <div class="slider__header">
         <ul class="aboutHeaderSliderr">
             @foreach ($slider as $item)
                 {{-- <li style="background-image: url('{{asset('images/VarionCapitalManag-2-2.jpg')}}')"></li> --}}
@@ -31,11 +31,11 @@
                             </div>
                         </div>
                     </div>
-                </div>  
+                </div>
             @endforeach
         </ul>
     </div>
-    
+
     <div class="bg-headerAbout"></div>
     <div class="bg-headerAbout2"></div>
     <div class="h_aks2"></div>
@@ -44,16 +44,28 @@
     <section class="section__about-first">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-lg-5">
+                <div class="col-12 col-lg-5 forDesktop">
                     <h4>{{$name}}</h4>
                     <h3>{{$title}}</h3>
                     {!! $description !!}
                 </div>
-                <div class="col-12 col-lg-7">
+                <div class="col-12 col-lg-7 forDesktop">
                     <div class="img__wrapper">
                         <div class="img__wrapper-front"><img src="{{asset('images/VarionCapitalManag-c2.jpg')}}" width="100%" height="100%" alt=""></div>
                         <div class="img__wrapper-back"><img src="{{asset('images/VarionCapitalManag-c1.jpg')}}" width="100%" height="100%"     alt=""></div>
                     </div>
+                </div>
+                <div class="col-12 col-lg-7 forMobile g-0">
+                    <div class="header__firtSection">
+                        <div class="header__firtSection-left"><img src="{{asset('images/VarionCapitalManag-c2.jpg')}}" width="100%" height="100%" alt=""><h4>{{$name}}</h4></div>
+                        <div class="header__firtSection-right"><img src="{{asset('images/VarionCapitalManag-c1.jpg')}}" width="100%" height="100%" alt=""></div>
+                    </div>
+                </div>
+                <div class="col-6 p-5 forMobile" style="background-color: #F4F4F5;">
+                    <h3>{{$title}}</h3>
+                </div>
+                <div class="col-6 p-5 forMobile">
+                    {!! $description !!}
                 </div>
             </div>
         </div>
@@ -63,7 +75,7 @@
     <section class="section__about-second">
         <div class="container">
             <div class="row subSlider">
-                <div class="col-12 col-lg-4 mb-5">
+                <div class="col-12 col-lg-4 mb-5 subSlider-item">
                     <div class="img__wrapper">
                         <img src="{{asset('images/VarionCapitalManag-11.jpg')}}" width="100%" height="100%" alt="">
                     </div>
@@ -72,7 +84,7 @@
                         <p>{{$investment}}</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-5">
+                <div class="col-12 col-lg-4 mb-5 subSlider-item">
                     <div class="img__wrapper">
                         <img src="{{asset('images/VarionCapitalManag-12.jpg')}}" width="100%" height="100%" alt="">
                     </div>
@@ -81,7 +93,7 @@
                         <p>{{$business}}</p>
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 mb-5">
+                <div class="col-12 col-lg-4 mb-5 subSlider-item">
                     <div class="img__wrapper">
                         <img src="{{asset('images/VarionCapitalManag-13.jpg')}}" width="100%" height="100%" alt="">
                     </div>

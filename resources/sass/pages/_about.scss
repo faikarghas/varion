@@ -1,5 +1,4 @@
 header{
-    
     .about__header{
         margin-top: 200px;
         @include respond(down-tab-port){
@@ -87,7 +86,7 @@ main{
         padding: 8rem 0;
         position: relative;
         @include respond(down-tab-port){
-            padding: 4rem 4rem;
+            padding: 0;
         }
         h4{
             font-size: 1.8rem;
@@ -146,6 +145,9 @@ main{
             top: 0;
             background-color: $color_lightGrey;
             z-index: -1;
+            @include respond(down-tab-port){
+                display: none;
+            }
         }
         .bg-mainAboutFirst2{
             position: absolute;
@@ -156,6 +158,31 @@ main{
             background-color: $color_lightGrey;
             z-index: -1;
         }
+        .header__firtSection{
+            flex-direction: row;
+            display: flex;
+            img{
+                object-fit: cover;
+            }
+            &-left{
+                height: 300px;
+                width: 70%;
+                position: relative;
+                h4{
+                    position: absolute;
+                    bottom: 20%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: white;
+                    width: 80%;
+                    margin: 0;
+                }
+            }
+            &-right{
+                height: 300px;
+                width: 30%;
+            }
+        }
     }
     .section__about-second{
         padding: 2rem 0 0rem 0;
@@ -163,12 +190,22 @@ main{
         @include respond(down-tab-port){
             padding: 0;
         }
+        .subSlider{
+            &-item{
+                @include respond(down-tab-port){
+                    border: 1px solid black;
+                }
+            }
+        }
         .img__wrapper{
             height: 250px;
             margin-bottom: 3.5rem;
         }
         .desc__wrapper{
             padding: 0 4rem;
+            @include respond(down-tab-port){
+                height: 150px;
+            }
             h3{
                 color: $color_darkGrey;
                 font-weight: 800;

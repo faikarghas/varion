@@ -67,6 +67,9 @@
         padding: 0 40px;
         h2{
             text-align: start;
+            @include respond(down-tab-port){
+                text-align: center;
+            }
         }
     }
     .mb-5r{

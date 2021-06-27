@@ -1,17 +1,41 @@
 @extends('components/layout.layout')
 @section('content')
 <div class="h_aks1"></div>
-<header class="position-relative">
+<header class="position-relative fumeHead">
     @include('components/presentational/menu',['listMenu'=>$listMenu])
+    <div class="slider__header fumex forMobile" style="background-color: #2E2D35;">
+        <ul class="m-0">
+            <li class="">
+                <div class="">
+                    <img src="{{asset('images')}}/fume-2.jpg" alt="fume-img1" height="200" width="100%">
+                    <img src="{{asset('images')}}/fume-3.jpg" alt="fume-img2" height="100" width="100%">
+                </div>
+                <div class="aboutHeaderSlider-item--desc forMobile">
+                    <div class="container-fluid g-0">
+                        <div class="row g-0">
+                            <div class="col-8 pt-5 pb-5">
+                                {{-- <h4>{!!$titleHeader!!}</h4> --}}
+                                <div class="title_wrapper">
+                                    <span class="spTitle"><strong>FUME KOPI INDONESIA</strong></span>
+                                    <h1 class="title"><strong>FROM BEANS TO BREW</strong></h1>
+                                </div>
+                            </div>
+                            <div class="col-6" style="background-color: #2E2D35"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 </header>
 <main>
-    <section class="section__fume-first">
+    <section class="section__fume-first forDesktop-dflex">
         <div class="left-img"><img src="{{asset('images/fume-2.jpg')}}" alt="fume-img1" width="100%"></div>
         <div class="right-img"><img src="{{asset('images/fume-3.jpg')}}" alt="fume-img1" width="100%"></div>
     </section>
     <section class="section__fume-second">
         <div class="container">
-            <div class="row">
+            <div class="row forDesktop">
                 <div class="col-12">
                     <div class="title_wrapper">
                         <span class="spTitle"><strong>FUME KOPI INDONESIA</strong></span>

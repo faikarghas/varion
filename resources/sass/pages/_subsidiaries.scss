@@ -1,3 +1,8 @@
+.fumeHead{
+    @include respond(down-tab-port){
+        padding-bottom: 0;
+    }
+}
 header{
     .about__header{
         margin-top: 200px;
@@ -92,6 +97,7 @@ header{
                         position: relative;
                         padding-bottom: 0rem;
                         margin-bottom: 0;
+                        width: 120%;
                     }
                 }
                 .col-6{
@@ -128,7 +134,24 @@ header{
             }
         }
     }
-
+    .fumex{
+        .title_wrapper{
+            .spTitle{
+                color: white;
+                font-size: 1.8rem;
+            }
+            h1{
+                color: white;
+                font-size: 2.2rem;
+            }
+        }
+        .left-img{
+            height: unset;
+        }
+        img{
+            object-fit: cover;
+        }
+    }
 }
 
 main{
@@ -369,12 +392,14 @@ main{
                     display: flex;
                     flex-direction: column;
                     @include respond(down-tab-port){
-                        margin-bottom: 2rem;
                     }
                     h4{
                         font-weight: 900;
                         color: white;
                         font-size: 1.4rem;
+                        @include respond(down-tab-port){
+                            margin-bottom: 0;
+                        }
                     }
                     h3{
                         color: white;
@@ -520,6 +545,19 @@ main{
                         align-items: center;
                         justify-content: center;
                     }
+                }
+            }
+        }
+        .banner_wrapper2M{
+            &-img{
+                img{
+                    height: 50%;
+                }
+            }
+            &-desc{
+                padding: 2rem;
+                h4{
+                    font-weight: bold;
                 }
             }
         }

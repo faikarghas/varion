@@ -64,9 +64,18 @@
                         <p>/</p>
                         <p class="paging__info-total"></p>
                     </div>
-                    <ul class="slider-nav">
+                    <ul class="slider-nav forDesktop">
                         @foreach ($content as $key => $item)
                             <li><img src="{{asset('images')}}/{{$item->imageHome}}" width="100%" height="360px" alt=""><div class="box_number"><p>0{{$key + 1}}.</p></div></li>
+                        @endforeach
+                    </ul>
+                    <ul class="slider-nav forMobile">
+                        @foreach ($content as $key => $item)
+                            <li>
+                                <img src="{{asset('images')}}/{{$item->imagHome1}}" width="100%" height="200px" alt="">
+                                <img src="{{asset('images')}}/{{$item->imagHome2}}" width="100%" height="100px" alt="">
+                                <div class="box_number"><p>0{{$key + 1}}.</p></div>
+                            </li>
                         @endforeach
                     </ul>
                 </div>
