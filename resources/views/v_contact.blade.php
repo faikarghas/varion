@@ -10,7 +10,7 @@
             <div class="row">
                 <div class="col-6 col-lg-6 section__contact-first-l">
                     <div>
-                        <h3>OFFICE</h3>
+                        <h3>OUR HEADQUARTER</h3>
                         <ul class="contact__wrapper-r-info">
                             <li class="mb-4"><p>{{$address}}</p></li>
                             <li><p class="m-0">PHONE {{$phone}}</p>
