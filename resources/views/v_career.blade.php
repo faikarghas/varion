@@ -48,7 +48,7 @@
             <div class="row">
                 <div class="col-12 mb-5r">
                     <div class="opcareer">
-                        <h2>OPEN POSITIONS</h2>
+                        <h2>VIEW JOB OPENING</h2>
                     </div>
                 </div>
                 @foreach ($listCareer as $item)

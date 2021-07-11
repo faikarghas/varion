@@ -64,9 +64,7 @@
                 <div class="col-12">
                     <div class="content-beginning">
                         <h2>OUR BEGINNING</h2>
-                        <p>Established in 2019, PT Fume Kopi Indonesia began the journey as a coffee roastery at Kemang, South Jakarta.
-                            We have faith that each step of the whole process – from planting, harvesting, sorting, fermenting, drying,
-                            milling, roasting, cupping to brewing – has always taken part in creating an exceptional flavor of the coffee.</p>
+                        <p>PT Fume Kopi Indonesia began its journey as a coffee roastery in Kemang, South Jakarta, in 2019. We believe that each step of the coffee production process – from planting, harvesting, sorting, fermenting, drying, milling, roasting, cupping, and brewing – has always contributed to the coffee's exceptional flavor. We create a seed-to-cup ecosystem of stockholders that is constantly discovering new ways to be creative in the coffee-making process.</p>
                     </div>
                 </div>
             </div>
