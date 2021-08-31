@@ -22,8 +22,8 @@ use App\Http\Controllers\AController;
 
 Route::get('/',[HomeController::class,'index'])->name('home');
 Route::get('about',[AboutController::class,'index'])->name('about');
-Route::get('subsidiaries/{slug}',[SubsidiariesController::class,'index']);
-Route::get('subsidiaries/fume-kopi-indonesia',[SubsidiariesController::class,'fume']);
+Route::get('subsidiaries/{slug}',[SubsidiariesController::class,'index'])->name('sub.data');
+Route::get('subsidiaries/fume-kopi-indonesia',[SubsidiariesController::class,'fume'])->name('fume');
 Route::get('career',[CareerController::class,'index'])->name('career');
 Route::get('contact',[ContactController::class,'index'])->name('contact');
 Route::post('contact/form',[ContactController::class,'postForm']);

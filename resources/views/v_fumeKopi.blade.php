@@ -72,43 +72,41 @@
                 <div class="col-lg-4 cb_wr2">
                     <div class="content-border2">
                         <div class="content-border2--sliderWrapper">
-                            <div class="fume_cb2">
+                            <div class="">
                                 <div>
                                     <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
                                 </div>
-                                {{-- <div>
-                                    <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
-                                </div>
-                                <div>
-                                    <img src="{{asset('images/fumeb.png')}}" alt="fume cup" width="100%">
-                                </div> --}}
                             </div>
-                            <ul class="fume_cb2_arrow">
-                                <li class="fume_prev1">prev</li>
-                                <li class="fume_next1">next</li>
-                            </ul>
                         </div>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, consequatur. Vero vel totam cumque eligendi! Veniam aspernatur suscipit aperiam, reprehenderit quos recusandae.!</p>
                     </div>
                 </div>
                 <div class="col-lg-8 cb_wr2">
                     <div class="row g-lg-0" style="height: 100%;">
-                        <div class="col-6 cb_wr2-1">
+                        <div class="col-12 col-lg-6 cb_wr2-1 map-bt">
                             <div class="content-border2">
                                 <img src="{{asset('images/fume-map.png')}}" width="80%" alt="fume cup" >
                             </div>
                         </div>
-                        <div class="col-6 cb_wr2-1">
+                        <div class="col-12 col-lg-6 cb_wr2-1">
                             <div class="content-border2">
                                 <img src="{{asset('images/fume-roasting.png')}}" width="80%" alt="fume cup" >
                             </div>
                         </div>
                         <div class="col-lg-12 cb_wr2-1">
                             <div class="content-border2">
-                                <h2>OUR CREATION</h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio explicabo numquam consequuntur asperiores itaque obcaecati expedita eos libero quam aliquam?</p>
+                                <div class="sodmed-fume">
+                                    <h2>FOLLOW US</h2>
+                                    <div class="ig-s"><span><img src="{{asset('images/instagram.svg')}}" width="20px" alt=""></span><a href="https://www.instagram.com/fume.coffee/" target="_blank" rel="noopener">@fume.coffee</a></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-lg-0">
+                <div class="col-lg-12">
+                    <div class="content-beginning"  style="border-bottom: 1px solid #ffffff47">
+                        <p>We proudly launched our first coffee shop outlet at Kemang in April 2020. With the 'homy' concept, we bring the atmosphere of being at home while serving our house blend coffee along with various Asian-Western fusion cuisines presented by our passionate Japanese chef. This year, we are expanding our signature outlet at Senopati, where the roastery, semi-outdoor, and fine-dining concept combines our coffee with cocktails and cuisines.</p>
                     </div>
                 </div>
             </div>
@@ -132,25 +130,38 @@
                                 <div>
                                     <img src="{{asset('images/fume-kitchen1.png')}}" alt="fume cup" width="100%">
                                 </div>
-                                {{-- <div>
-                                    <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
-                                </div>
-                                <div>
-                                    <img src="{{asset('images/jpm.png')}}" alt="fume cup" width="100%">
-                                </div> --}}
                             </div>
-                            <ul class="fume_cb2_arrow">
-                                <li class="fume_prev2">prev</li>
-                                <li class="fume_next2">next</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row g-lg-0">
-                <div class="col-lg-12">
-                    <div class="end_desc">
-                        <p>We proudly launched our first coffee shop outlet at Kemang in April 2020. With the 'homy' concept, we bring the atmosphere of being at home while serving our house blend coffee along with various Asian-Western fusion cuisines presented by our passionate Japanese chef. This year, we are expanding our signature outlet at Senopati, where the roastery, semi-outdoor, and fine-dining concept combines our coffee with cocktails and cuisines.</p>
+            <div class="row g-lg-0 fume_contact-pad">
+                <div class="col-12 col-lg-4 fume_contact">
+                    <div class="fumee_contact_item">
+                        <p><strong>Coffee Roaster and Trading Consultant Management</strong></p>
+                        <p>Jl. Kemang Utara No.9, RT.3/RW.4,<br>
+                            Bangka, Kec. Mampang Prpt.,<br>
+                            Kota Jakarta Selatan,<br>
+                            Daerah Khusus Ibukota<br>
+                            Jakarta 12730</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 fume_contact">
+                    <div class="fumee_contact_item">
+                        <p><strong>Fume Coffee Shop</strong></p>
+                        <p>Wisma46 Building, 45th Floor,<br>
+                            Jalan Jenderal Sudirman,<br>
+                            Kav-1, Jakarta,</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 fume_contact">
+                    <div class="fumee_contact_item">
+                        <p><strong>Fume Coffee & Kitchen</strong></p>
+                        <p>Jl. Kemang Utara No.9, RT.3/RW.4,<br>
+                            Bangka, Kec. Mampang Prpt.,<br>
+                            Kota Jakarta Selatan,<br>
+                            Daerah Khusus Ibukota<br>
+                            Jakarta 12730</p>
                     </div>
                 </div>
             </div>
@@ -159,14 +170,12 @@
     <section class="section__fume-third">
         <div class="banner_wrapper">
             <div class="banner_wrapper-left" style="background-image: url('{{asset('images/fume-4.png')}}')">
-                {{-- <img src="https://source.unsplash.com/400x340" alt="banner"> --}}
                 <div class="desc"><h4>FUME KERTANEGARA<br/>BREWING SOON<br/>IN AUGUST 2021</h4></div>
             </div>
             <div class="banner_wrapper-right" style="background-image: url('{{asset('images/fume-5.png')}}')">
-                {{-- <img src="https://source.unsplash.com/700x340" alt="banner"> --}}
                 <div class="desc"><h4>PLANTATION &<br/>PROCESSING</h4></div>
                 <div class="btn-readMore">
-                    <a href="">READ MORE</a>
+                    <a href="{{route('sub.data','pt-varion-sukses-makmur')}}">READ MORE</a>
                 </div>
             </div>
         </div>

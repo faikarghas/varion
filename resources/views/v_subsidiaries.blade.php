@@ -104,13 +104,14 @@
                             </div>
                             <div class="desc__wrapper">
                                 @if ($slug === 'pt-varion-sukses-makmur')
-                                    <h3 class="mb-4">PLANTATION</h3>
-                                    <p>Generally planted in large beds in shaded nurseries, coffee seeds will be watered frequently and shaded from the bright sunlight until they show heartiness in order for them to be permanently planted. Often, planting takes place during the rainy season as they need the moist soil to be firmly growing.</p>
+                                    <h3 class="mb-4">SOURCING</h3>
+                                    <p>Our sourcing is coming from region which produces best Arabica coffee in Indonesia. The region mentioned are West Java, North Sumatra, and Aceh. Our network of farmers in 3 regions is growing from 500 farmers to 5.000 farmers and keep counting. The sourcing team is eager to source smarter and thus can promote best arabica coffee from Indonesia. Varion Sukses Makmur also promote traceability practice in the sourcing by working with partner such as Emurgo and Farmer Connect.</p>
                                 @elseif($slug === 'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
                                     <p>This is where our innovations and future breakthroughs are born. We strive to put consistent research and development as a top priority in order to keep serving people the best of our products and services. </p>
                                 @else
                                     <h3 class="mb-4">RESEARCH & DEVELOPMENT</h3>
+                                    <p>This is where our innovations and future breakthroughs are born. We strive to put consistent research and development as a top priority in order to keep serving people the best of our products and services. </p>
                                 @endif
                             </div>
                         </div>
@@ -121,12 +122,13 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">PROCESSING</h3>
-                                    <p>After the coffee-picking, processing must begin immediately before the fruits become spoiled. In the processing step, the coffee bean is done in two famous ways depending on the weather, which are dry and wet methods.   </p>
+                                    <p>The coffee-processing method utilized in the company is wet-hulled process. After the coffee-picking, processing must begin immediately before the fruits become spoiled. Best coffee are often found in the high elevation area. Gloomy weather, humid,  and lack of sun are natural reasons that wet hulled is best processing method in Indonesia. By using this method, processor do not have to wait until parchment fully dried, instead hulling them in a  semi - wet stage. </p>
                                 @elseif($slug ===  'pt-varion-agritech-indonesia')
-                                    <h3 class="mb-4">STRAWBERRY FARMING</h3>
-                                    <p>Strawberry production in Japan is mostly done in greenhouses due to the uncertain temperatures, water, and conditions. Bringing those strawberries to tropical land like Indonesia has become the better decision since the humidity stays in control. </p>
+                                    <h3 class="mb-4">FARMING</h3>
+                                    <p>Strawberry production in Japan is mostly done in green houses due to the uncertain temperatures, water and conditions. Bringing those strawberries to the tropical land like Indonesia has become the better decision since the humidity stays in control.</p>
                                 @else
                                     <h3 class="mb-4">FARMING</h3>
+                                    <p>The potato has been selected as priority crop in the strategic plans of research and development program of the Indonesian Center for Horticulture Research and Development (ICHORD), the Indonesian Agency for Agricultural Research and Development (IAARD) in Indonesia in the last 30 years. This is due to its potential as alternative source of carbohydrates in food diversification and as export commodity.</p>
                                 @endif
                             </div>
                         </div>
@@ -137,12 +139,13 @@
                             <div class="desc__wrapper">
                                 @if ($slug ===  'pt-varion-sukses-makmur')
                                     <h3 class="mb-4">TRADING</h3>
-                                    <p>Being the second most commonly traded commodity in the world with more than 2.25 billion cups consumed daily, coffee trails only as a source of foreign exchange to developing countries. </p>
+                                    <p>Being the second most commonly traded commodity in the world with more than 2.25 billion cups consumed daily, coffee trails only as a source of foreign exchange to developing countries.</p>
                                 @elseif($slug ===  'pt-varion-agritech-indonesia')
                                     <h3 class="mb-4">DISTRIBUTION</h3>
-                                    <p>Strawberries are widely consumed as the fruit itself, jams, beverages, and other food flavorings. In the market, strawberry fruits are among the fancy fruits that many people often dig in because of the taste and health benefits. </p>
+                                    <p>Strawberries are widely consumed as the fruit itself, jams, beverages, and other food flavorings. In the market, strawberry fruits are among the fancy fruits that many people often dig in because of the taste and health benefits.</p>
                                 @else
                                     <h3 class="mb-4">DISTRIBUTION</h3>
+                                    <p>Seed potatoes are imported and produced locally by official institutes. However, a large part of the seed potatoes are taken from preceding production fields. Whenever there are not many problems with diseases during production and the yield is good farmers keep a large share of the produced potatoes back to be used for a next planting.</p>
                                 @endif
                             </div>
                         </div>
@@ -153,17 +156,17 @@
             <section class="section__subsidiaries-third">
                 @if ($imageFooterType === 1)
                     <div class="banner_wrapper">
-                        <div class="banner_wrapper-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
+                        {{-- <div class="banner_wrapper-left" style="background-image: url('{{asset('images')}}/{{$imageFooter}}')">
                             <div class="desc forDesktop">{!!$imageFooterDesc!!}</div>
                             <img src="http://127.0.0.1:3020/images/Varionsuksesmakmur-b1.jpg" class="img-fluid forMobile" alt="">
                         </div>
                         <div class="banner_wrapper-leftM forMobile">
                             <div class="desc p-5">{!!$imageFooterDesc!!}</div>
-                        </div>
+                        </div> --}}
                         <div class="banner_wrapper-right forDesktop" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
                             <div class="desc">{!!$imageFooter2Desc!!}</div>
                             <div class="btn-readMore">
-                                <a href="">READ MORE</a>
+                                <a href="{{route('fume')}}">READ MORE</a>
                             </div>
                         </div>
                         <div class="container forMobile">
@@ -171,7 +174,7 @@
                                 <div class=" col-7 banner_wrapper-right" style="background-image: url('{{asset('images')}}/{{$imageFooter2}}')">
                                     <div class="desc">{!!$imageFooter2Desc!!}</div>
                                     <div class="btn-readMore">
-                                        <a href="">READ MORE</a>
+                                        <a href="{{route('fume')}}">READ MORE</a>
                                     </div>
                                 </div>
                             </div>
@@ -204,6 +207,9 @@
                                         @if($slug ===  'pt-varion-agritech-indonesia')
                                             <h2 class="mb-4">WILL BE ON THE<br> MARKET IN 2022</h2>
                                             <p>It is with great pleasure to announce to you that our finest strawberries are coming to your nearest supermarket soon.</p>
+                                        @elseif($slug === 'pt-varion-agro-sentosa')
+                                            <h2 class="mb-4">WILL BE ON THE<br> MARKET IN 2022</h2>
+                                            <p>It is with great pleasure to announce to you that our finest potatoes are coming to your nearest supermarket soon.</p>
                                         @endif
                                     </div>
                                 </div>
